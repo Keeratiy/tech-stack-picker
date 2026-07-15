@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cn-tech-stack.dev/sitemap.xml
+Sitemap: https://tech-stack-picker-drab.vercel.app/sitemap.xml
