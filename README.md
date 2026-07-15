@@ -1,52 +1,60 @@
-# React + TypeScript + Vite
+# Tech Stack Picker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page React application for composing technology stacks. Browse ~30 categories of backend and frontend technologies, make your selections, and generate an architecture prompt to share.
 
-Currently, two official plugins are available:
+Built with **React 19**, **TypeScript 6**, **Vite 8**, **Tailwind CSS 4**, and **Vitest**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Quick Start
 
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+bunx --bun vite                    # Start dev server
+bunx --bun vitest run --environment jsdom  # Run tests
+tsc -b && vite build               # Type-check + build
+eslint .                           # Lint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
+
+- Browse technologies across 20 backend and 10 frontend categories
+- Single-select (radio) and multi-select (checkbox) modes
+- Search/filter technologies by name, description, or strengths
+- Selections persist in `localStorage`
+- Summary view with copy-to-clipboard architecture prompt
+- Responsive design with mobile tabs
+- Keyboard accessible with ARIA support
+
+## Project Structure
+
+```
+src/
+├── main.tsx                  # Entry point
+├── App.tsx                   # Root component with view routing
+├── index.css                 # Tailwind theme + base styles
+├── types/catalog.ts          # TypeScript type definitions
+├── data/technologies.json    # Technology catalog data
+├── lib/stack.ts              # Pure business logic
+├── hooks/useStackPicker.ts   # State management hook
+└── components/               # UI components
+    ├── AppHeader.tsx
+    ├── DomainCatalog.tsx
+    ├── CategoryPanel.tsx
+    ├── TechnologyCard.tsx
+    ├── SelectedStack.tsx
+    ├── StackSummary.tsx
+    └── MobileViewTabs.tsx
+```
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | React 19 |
+| Language | TypeScript 6 |
+| Build | Vite 8 + SWC |
+| Styling | Tailwind CSS 4 |
+| Icons | lucide-react + simpleicons.org |
+| Testing | Vitest + Testing Library |
+| Linting | ESLint 10 + typescript-eslint |
 
 ```js
 // eslint.config.js
