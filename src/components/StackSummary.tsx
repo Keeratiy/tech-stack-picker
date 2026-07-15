@@ -144,7 +144,7 @@ export function StackSummary({
           ) : (
             <>
               <Clipboard className="size-4" aria-hidden="true" />
-              Copy architecture prompt
+              Copy generate image prompt
             </>
           )}
         </button>
