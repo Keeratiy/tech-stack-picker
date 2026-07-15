@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fbf9f6;
+  --color-ink: #191919;
+  --color-rule: #eae5dc;
+  --color-muted: #6f6a62;
+  --color-coral: #c65d3b;
+  --color-coral-soft: #f4e4dc;
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-editorial: "Newsreader", Georgia, serif;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { background: var(--color-paper); }
+  body { margin: 0; min-width: 320px; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); }
+  button, input { font: inherit; }
+  button { cursor: pointer; }
+  ::selection { background: var(--color-coral-soft); color: var(--color-ink); }
+
+  /* Slim custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-rule);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-muted);
+  }
+  @supports (scrollbar-width: thin) {
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-rule) transparent;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

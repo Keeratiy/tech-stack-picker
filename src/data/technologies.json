@@ -1,0 +1,2396 @@
+{
+  "categories": [
+    {
+      "id": "backend-runtime",
+      "domain": "backend",
+      "name": "Backend Runtime",
+      "description": "Where server code executes",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "nodejs",
+          "name": "Node.js",
+          "description": "JavaScript runtime for network applications.",
+          "strengths": ["Mature ecosystem", "Non-blocking I/O"],
+          "icon": "nodedotjs",
+          "website": "https://nodejs.org"
+        },
+        {
+          "id": "bun",
+          "name": "Bun",
+          "description": "Fast JavaScript runtime with built-in tooling.",
+          "strengths": ["Quick startup", "All-in-one toolkit"],
+          "icon": "bun",
+          "website": "https://bun.sh"
+        },
+        {
+          "id": "go",
+          "name": "Go",
+          "description": "Compiled language for simple, efficient network services.",
+          "strengths": ["Fast binaries", "Built-in concurrency"],
+          "icon": "go",
+          "website": "https://go.dev"
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "description": "Systems language focused on safety and performance.",
+          "strengths": ["Memory safety", "Zero-cost abstractions"],
+          "icon": "rust",
+          "website": "https://www.rust-lang.org"
+        },
+        {
+          "id": "php",
+          "name": "PHP",
+          "description": "Server-side scripting language for web development.",
+          "strengths": ["Wide hosting support", "Large ecosystem"],
+          "icon": "php",
+          "website": "https://www.php.net"
+        },
+        {
+          "id": "java",
+          "name": "Java",
+          "description": "Mature, JVM-based language for enterprise and backend applications.",
+          "strengths": ["JVM ecosystem", "Enterprise grade"],
+          "icon": "openjdk",
+          "website": "https://www.java.com"
+        },
+        {
+          "id": "python",
+          "name": "Python",
+          "description": "Versatile language for web, data, and automation services.",
+          "strengths": ["Rich libraries", "Rapid development"],
+          "icon": "python",
+          "website": "https://www.python.org"
+        },
+        {
+          "id": "dotnet-core",
+          "name": ".NET Core",
+          "description": "Cross-platform framework for modern .NET applications.",
+          "strengths": ["High performance", "Cross-platform"],
+          "icon": "dotnet",
+          "website": "https://dotnet.microsoft.com"
+        }
+      ]
+    },
+    {
+      "id": "backend-framework",
+      "domain": "backend",
+      "name": "Backend Framework",
+      "description": "Structured server-side application frameworks",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "aspnet-core",
+          "name": "ASP.NET Core (C#)",
+          "description": "High-performance framework for building modern .NET web apps and APIs.",
+          "strengths": ["High performance", "Microsoft ecosystem"],
+          "icon": "dotnet",
+          "website": "https://dotnet.microsoft.com/apps/aspnet"
+        },
+        {
+          "id": "spring-boot",
+          "name": "Spring Boot",
+          "description": "Production-grade framework for Java microservices and web apps.",
+          "strengths": ["Auto-configuration", "Java ecosystem"],
+          "icon": "spring",
+          "website": "https://spring.io/projects/spring-boot"
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "description": "Modern Python framework for building APIs with automatic docs.",
+          "strengths": ["Auto OpenAPI", "Async support"],
+          "icon": "fastapi",
+          "website": "https://fastapi.tiangolo.com"
+        },
+        {
+          "id": "nestjs",
+          "name": "NestJS",
+          "description": "Progressive Node.js framework for building efficient server-side apps.",
+          "strengths": ["Modular architecture", "TypeScript native"],
+          "icon": "nestjs",
+          "website": "https://nestjs.com"
+        },
+        {
+          "id": "expressjs",
+          "name": "Express.js",
+          "description": "Minimal and flexible Node.js web application framework.",
+          "strengths": ["Simple routing", "Large ecosystem"],
+          "icon": "express",
+          "website": "https://expressjs.com"
+        },
+        {
+          "id": "django",
+          "name": "Django",
+          "description": "High-level Python framework for rapid, secure web development.",
+          "strengths": ["Batteries included", "Admin interface"],
+          "icon": "django",
+          "website": "https://www.djangoproject.com"
+        },
+        {
+          "id": "laravel",
+          "name": "Laravel",
+          "description": "Elegant PHP framework with expressive syntax and rich tooling.",
+          "strengths": ["Artisan CLI", "Eloquent ORM"],
+          "icon": "laravel",
+          "website": "https://laravel.com"
+        },
+        {
+          "id": "gin",
+          "name": "Gin",
+          "description": "Fast HTTP web framework for Go with minimal overhead.",
+          "strengths": ["High performance", "Minimal footprint"],
+          "icon": "gin",
+          "website": "https://gin-gonic.com"
+        },
+        {
+          "id": "axum",
+          "name": "Axum",
+          "description": "Ergonomic Rust web framework built on Tokio, Tower, and Hyper.",
+          "strengths": ["Type safety", "Tokio ecosystem"],
+          "icon": "rust",
+          "website": "https://github.com/tokio-rs/axum"
+        },
+        {
+          "id": "elysia",
+          "name": "Elysia",
+          "description": "TypeScript framework for Bun with end-to-end type safety.",
+          "strengths": ["Type safety", "Bun native"],
+          "icon": "elysia",
+          "website": "https://elysiajs.com"
+        }
+      ]
+    },
+    {
+      "id": "compute-hosting",
+      "domain": "backend",
+      "name": "Compute / Hosting",
+      "description": "Where the application lives",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "vercel",
+          "name": "Vercel",
+          "description": "Frontend-focused platform for global deployments.",
+          "strengths": ["Git workflows", "Edge network"],
+          "icon": "vercel",
+          "website": "https://vercel.com"
+        },
+        {
+          "id": "cloudflare-workers",
+          "name": "Cloudflare Workers",
+          "description": "Serverless compute running close to users.",
+          "strengths": ["Low latency", "Global edge"],
+          "icon": "cloudflareworkers",
+          "website": "https://workers.cloudflare.com"
+        },
+        {
+          "id": "aws-lambda",
+          "name": "AWS Lambda",
+          "description": "Event-driven serverless functions on AWS.",
+          "strengths": ["Scales on demand", "AWS integration"],
+          "icon": "awslambda",
+          "website": "https://aws.amazon.com/lambda"
+        },
+        {
+          "id": "aws-ec2",
+          "name": "AWS EC2",
+          "description": "Virtual servers for flexible AWS application hosting.",
+          "strengths": ["Full control", "AWS ecosystem"],
+          "icon": "amazonec2",
+          "website": "https://aws.amazon.com/ec2"
+        },
+        {
+          "id": "google-cloud-run",
+          "name": "Google Cloud Run",
+          "description": "Managed containers that scale automatically on Google Cloud.",
+          "strengths": ["Serverless containers", "Scale to zero"],
+          "icon": "googlecloud",
+          "website": "https://cloud.google.com/run"
+        },
+        {
+          "id": "azure-app-service",
+          "name": "Azure App Service",
+          "description": "Managed platform for hosting web applications and APIs.",
+          "strengths": ["Managed hosting", "Azure integration"],
+          "icon": "microsoftazure",
+          "website": "https://azure.microsoft.com/products/app-service"
+        },
+        {
+          "id": "azure-functions",
+          "name": "Azure Functions",
+          "description": "Event-driven serverless compute on Microsoft Azure.",
+          "strengths": ["Event driven", "Azure integration"],
+          "icon": "azurefunctions",
+          "website": "https://azure.microsoft.com/products/functions"
+        },
+        {
+          "id": "flyio",
+          "name": "Fly.io",
+          "description": "Global application platform for running workloads near users.",
+          "strengths": ["Global regions", "Container support"],
+          "icon": "flydotio",
+          "website": "https://fly.io"
+        },
+        {
+          "id": "railway",
+          "name": "Railway",
+          "description": "Developer-friendly platform for deploying applications and services.",
+          "strengths": ["Simple deploys", "Managed services"],
+          "icon": "railway",
+          "website": "https://railway.com"
+        },
+        {
+          "id": "render",
+          "name": "Render",
+          "description": "Cloud platform for web services, databases, and jobs.",
+          "strengths": ["Easy setup", "Managed infrastructure"],
+          "icon": "render",
+          "website": "https://render.com"
+        },
+        {
+          "id": "netlify",
+          "name": "Netlify",
+          "description": "Web platform for deploying frontend sites and functions.",
+          "strengths": ["Git workflows", "Serverless functions"],
+          "icon": "netlify",
+          "website": "https://www.netlify.com"
+        },
+        {
+          "id": "digitalocean",
+          "name": "DigitalOcean",
+          "description": "Cloud infrastructure with approachable developer tooling.",
+          "strengths": ["Simple infrastructure", "Predictable pricing"],
+          "icon": "digitalocean",
+          "website": "https://www.digitalocean.com"
+        }
+      ]
+    },
+    {
+      "id": "relational-database",
+      "domain": "backend",
+      "name": "Relational Database",
+      "description": "Structured data with relational queries",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "description": "Extensible open-source relational database.",
+          "strengths": ["Rich SQL", "Reliable transactions"],
+          "icon": "postgresql",
+          "website": "https://www.postgresql.org"
+        },
+        {
+          "id": "neon",
+          "name": "Neon",
+          "description": "Serverless Postgres with instant branching.",
+          "strengths": ["Autoscaling", "Database branches"],
+          "icon": "neon",
+          "website": "https://neon.tech"
+        },
+        {
+          "id": "mysql",
+          "name": "MySQL",
+          "description": "Widely used relational database engine.",
+          "strengths": ["Familiar tooling", "Proven scale"],
+          "icon": "mysql",
+          "website": "https://www.mysql.com"
+        },
+        {
+          "id": "supabase",
+          "name": "Supabase",
+          "description": "Postgres platform with backend services and APIs.",
+          "strengths": ["Postgres foundation", "Integrated services"],
+          "icon": "supabase",
+          "website": "https://supabase.com"
+        },
+        {
+          "id": "turso",
+          "name": "Turso",
+          "description": "Distributed SQLite database built for edge applications.",
+          "strengths": ["Edge replicas", "SQLite compatible"],
+          "icon": "turso",
+          "website": "https://turso.tech"
+        },
+        {
+          "id": "sql-server",
+          "name": "SQL Server",
+          "description": "Microsoft relational database for enterprise applications.",
+          "strengths": ["Enterprise tooling", "Reliable transactions"],
+          "icon": "microsoftsqlserver",
+          "website": "https://www.microsoft.com/sql-server"
+        },
+        {
+          "id": "azure-sql",
+          "name": "Azure SQL",
+          "description": "Managed SQL Server database service on Azure.",
+          "strengths": ["Managed operations", "Azure integration"],
+          "icon": "microsoftazure",
+          "website": "https://azure.microsoft.com/products/azure-sql"
+        },
+        {
+          "id": "oracle",
+          "name": "Oracle Database",
+          "description": "Enterprise relational database for mission-critical workloads.",
+          "strengths": ["Enterprise features", "High availability"],
+          "icon": "oracle",
+          "website": "https://www.oracle.com/database"
+        },
+        {
+          "id": "sqlite",
+          "name": "SQLite",
+          "description": "Embedded relational database engine for local storage.",
+          "strengths": ["Zero configuration", "Serverless"],
+          "icon": "sqlite",
+          "website": "https://www.sqlite.org"
+        }
+      ]
+    },
+    {
+      "id": "nosql-database",
+      "domain": "backend",
+      "name": "NoSQL Database",
+      "description": "Flexible and document-oriented data",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "mongodb",
+          "name": "MongoDB",
+          "description": "Document database for flexible data models.",
+          "strengths": ["Schema flexibility", "Developer velocity"],
+          "icon": "mongodb",
+          "website": "https://www.mongodb.com"
+        },
+        {
+          "id": "dynamodb",
+          "name": "DynamoDB",
+          "description": "Managed key-value database from AWS.",
+          "strengths": ["Serverless scale", "Low operations"],
+          "icon": "amazondynamodb",
+          "website": "https://aws.amazon.com/dynamodb"
+        },
+        {
+          "id": "firebase",
+          "name": "Firebase Firestore",
+          "description": "Realtime document database for web and mobile.",
+          "strengths": ["Realtime sync", "Client SDKs"],
+          "icon": "firebase",
+          "website": "https://firebase.google.com"
+        },
+        {
+          "id": "convex",
+          "name": "Convex",
+          "description": "Reactive backend and database for full-stack applications.",
+          "strengths": ["Realtime data", "TypeScript native"],
+          "icon": "convex",
+          "website": "https://www.convex.dev"
+        },
+        {
+          "id": "cosmos-db",
+          "name": "Azure Cosmos DB",
+          "description": "Globally distributed NoSQL database service on Azure.",
+          "strengths": ["Global distribution", "Multiple APIs"],
+          "icon": "microsoftazure",
+          "website": "https://azure.microsoft.com/products/cosmos-db"
+        },
+        {
+          "id": "cassandra",
+          "name": "Apache Cassandra",
+          "description": "Distributed wide-column database for high-scale workloads.",
+          "strengths": ["High availability", "Linear scalability"],
+          "icon": "apachecassandra",
+          "website": "https://cassandra.apache.org"
+        },
+        {
+          "id": "scylladb",
+          "name": "ScyllaDB",
+          "description": "High-performance wide-column database compatible with Cassandra.",
+          "strengths": ["Low latency", "C++ implementation"],
+          "icon": "scylladb",
+          "website": "https://www.scylladb.com"
+        }
+      ]
+    },
+    {
+      "id": "cache",
+      "domain": "backend",
+      "name": "Cache",
+      "description": "Fast temporary data storage",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "redis",
+          "name": "Redis",
+          "description": "In-memory data store for caching and queues.",
+          "strengths": ["Very low latency", "Versatile data types"],
+          "icon": "redis",
+          "website": "https://redis.io"
+        },
+        {
+          "id": "upstash",
+          "name": "Upstash Redis",
+          "description": "Serverless Redis with an HTTP API.",
+          "strengths": ["Pay per request", "Edge ready"],
+          "icon": "upstash",
+          "website": "https://upstash.com"
+        },
+        {
+          "id": "memcached",
+          "name": "Memcached",
+          "description": "Simple distributed memory object cache.",
+          "strengths": ["Simple", "Battle tested"],
+          "icon": "memcached",
+          "website": "https://memcached.org"
+        }
+      ]
+    },
+    {
+      "id": "cdn",
+      "domain": "backend",
+      "name": "CDN",
+      "description": "Global delivery for static assets",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "cloudflare",
+          "name": "Cloudflare",
+          "description": "Global network for web performance and security.",
+          "strengths": ["Large edge network", "Security tools"],
+          "icon": "cloudflare",
+          "website": "https://www.cloudflare.com"
+        },
+        {
+          "id": "fastly",
+          "name": "Fastly",
+          "description": "Programmable edge cloud platform.",
+          "strengths": ["Instant purges", "Edge compute"],
+          "icon": "fastly",
+          "website": "https://www.fastly.com"
+        },
+        {
+          "id": "bunny",
+          "name": "Bunny CDN",
+          "description": "Straightforward global content delivery.",
+          "strengths": ["Simple pricing", "Fast delivery"],
+          "icon": "bunny",
+          "website": "https://bunny.net"
+        },
+        {
+          "id": "cloudfront",
+          "name": "Amazon CloudFront",
+          "description": "Fast content delivery network tightly integrated with AWS.",
+          "strengths": ["Global edge", "AWS integration"],
+          "icon": "amazoncloudfront",
+          "website": "https://aws.amazon.com/cloudfront"
+        },
+        {
+          "id": "akamai",
+          "name": "Akamai",
+          "description": "Large-scale content delivery and edge security platform.",
+          "strengths": ["Massive scale", "Enterprise security"],
+          "icon": "akamai",
+          "website": "https://www.akamai.com"
+        }
+      ]
+    },
+    {
+      "id": "message-queue",
+      "domain": "backend",
+      "name": "Message Queue",
+      "description": "Reliable asynchronous work",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "kafka",
+          "name": "Apache Kafka",
+          "description": "Distributed event streaming platform.",
+          "strengths": ["High throughput", "Event history"],
+          "icon": "apachekafka",
+          "website": "https://kafka.apache.org"
+        },
+        {
+          "id": "rabbitmq",
+          "name": "RabbitMQ",
+          "description": "Flexible message broker for service communication.",
+          "strengths": ["Routing options", "Mature protocol support"],
+          "icon": "rabbitmq",
+          "website": "https://www.rabbitmq.com"
+        },
+        {
+          "id": "inngest",
+          "name": "Inngest",
+          "description": "Durable background jobs and event workflows.",
+          "strengths": ["Built-in retries", "Developer friendly"],
+          "icon": "inngest",
+          "website": "https://www.inngest.com"
+        },
+        {
+          "id": "sqs",
+          "name": "Amazon SQS",
+          "description": "Fully managed message queuing for decoupling services.",
+          "strengths": ["Serverless", "Unlimited throughput"],
+          "icon": "amazonsqs",
+          "website": "https://aws.amazon.com/sqs"
+        },
+        {
+          "id": "pubsub",
+          "name": "Google Cloud Pub/Sub",
+          "description": "Scalable event ingestion and delivery service.",
+          "strengths": ["Global scale", "Exactly-once delivery"],
+          "icon": "googlepubsub",
+          "website": "https://cloud.google.com/pubsub"
+        },
+        {
+          "id": "nats",
+          "name": "NATS",
+          "description": "High-performance messaging for cloud-native apps.",
+          "strengths": ["Ultra-low latency", "Cloud native"],
+          "icon": "nats",
+          "website": "https://nats.io"
+        },
+        {
+          "id": "bullmq",
+          "name": "Bull / BullMQ",
+          "description": "Redis-backed job and message queue for Node.js.",
+          "strengths": ["Redis backed", "Job scheduling"],
+          "icon": "bullmq",
+          "website": "https://bullmq.io"
+        }
+      ]
+    },
+    {
+      "id": "orm-data-layer",
+      "domain": "backend",
+      "name": "ORM / Data Layer",
+      "description": "How application code queries data",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "prisma",
+          "name": "Prisma",
+          "description": "Type-safe ORM and migration toolkit.",
+          "strengths": ["Excellent DX", "Type safety"],
+          "icon": "prisma",
+          "website": "https://www.prisma.io"
+        },
+        {
+          "id": "drizzle",
+          "name": "Drizzle",
+          "description": "Lightweight TypeScript ORM with SQL-like syntax.",
+          "strengths": ["SQL control", "Small footprint"],
+          "icon": "drizzle",
+          "website": "https://orm.drizzle.team"
+        },
+        {
+          "id": "typeorm",
+          "name": "TypeORM",
+          "description": "ORM for TypeScript and JavaScript applications.",
+          "strengths": ["Decorator support", "Multiple databases"],
+          "icon": "typeorm",
+          "website": "https://typeorm.io"
+        },
+        {
+          "id": "sequelize",
+          "name": "Sequelize",
+          "description": "Promise-based ORM for Node.js SQL databases.",
+          "strengths": ["Mature ecosystem", "SQL dialects"],
+          "icon": "sequelize",
+          "website": "https://sequelize.org"
+        },
+        {
+          "id": "raw-sql",
+          "name": "Raw SQL",
+          "description": "Write database queries directly with SQL.",
+          "strengths": ["Full control", "No abstraction overhead"],
+          "icon": "postgresql",
+          "website": "https://www.postgresql.org/docs/current/sql.html"
+        },
+        {
+          "id": "entity-framework-core",
+          "name": "Entity Framework Core",
+          "description": "Modern object-relational mapper for .NET applications.",
+          "strengths": ["LINQ queries", "Migration tooling"],
+          "icon": "dotnet",
+          "website": "https://learn.microsoft.com/ef/core"
+        },
+        {
+          "id": "hibernate",
+          "name": "Hibernate ORM",
+          "description": "Mature object-relational mapping framework for Java.",
+          "strengths": ["JPA standard", "Mature ecosystem"],
+          "icon": "hibernate",
+          "website": "https://hibernate.org"
+        }
+      ]
+    },
+    {
+      "id": "realtime",
+      "domain": "backend",
+      "name": "Real Time Communication",
+      "description": "Live updates and collaboration",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "pusher",
+          "name": "Pusher",
+          "description": "Hosted realtime APIs for web and mobile.",
+          "strengths": ["Quick integration", "Presence channels"],
+          "icon": "pusher",
+          "website": "https://pusher.com"
+        },
+        {
+          "id": "ably",
+          "name": "Ably",
+          "description": "Global realtime messaging platform.",
+          "strengths": ["Reliable delivery", "Global presence"],
+          "icon": "ably",
+          "website": "https://ably.com"
+        },
+        {
+          "id": "signalr",
+          "name": "SignalR",
+          "description": "Real-time web functionality for .NET applications.",
+          "strengths": [".NET native", "Automatic transport selection"],
+          "icon": "dotnet",
+          "website": "https://dotnet.microsoft.com/apps/aspnet/signalr"
+        },
+        {
+          "id": "socketio",
+          "name": "Socket.IO",
+          "description": "Bidirectional event-based communication library.",
+          "strengths": ["Fallback transports", "Broad adoption"],
+          "icon": "socketdotio",
+          "website": "https://socket.io"
+        },
+        {
+          "id": "websockets",
+          "name": "WebSockets",
+          "description": "Full-duplex communication protocol over a single TCP connection.",
+          "strengths": ["Low latency", "Standard protocol"],
+          "icon": "websocket",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"
+        },
+        {
+          "id": "webrtc",
+          "name": "WebRTC",
+          "description": "Peer-to-peer real-time audio, video, and data communication.",
+          "strengths": ["Peer-to-peer", "Audio/video support"],
+          "icon": "webrtc",
+          "website": "https://webrtc.org"
+        },
+        {
+          "id": "sse",
+          "name": "Server-Sent Events",
+          "description": "One-way server-to-client push over HTTP.",
+          "strengths": ["Simple protocol", "Auto-reconnect"],
+          "icon": "eventsource",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events"
+        }
+      ]
+    },
+    {
+      "id": "auth",
+      "domain": "backend",
+      "name": "Auth",
+      "description": "Identity and secure access",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "clerk",
+          "name": "Clerk",
+          "description": "Prebuilt authentication for modern apps.",
+          "strengths": ["Polished UI", "Fast setup"],
+          "icon": "clerk",
+          "website": "https://clerk.com"
+        },
+        {
+          "id": "authjs",
+          "name": "NextAuth / Auth.js",
+          "description": "Open-source authentication for JavaScript apps.",
+          "strengths": ["Framework support", "Provider ecosystem"],
+          "icon": "auth0",
+          "website": "https://authjs.dev"
+        },
+        {
+          "id": "supabase-auth",
+          "name": "Supabase Auth",
+          "description": "Authentication integrated with Supabase services.",
+          "strengths": ["Database policies", "Open source"],
+          "icon": "supabase",
+          "website": "https://supabase.com/auth"
+        },
+        {
+          "id": "auth0",
+          "name": "Auth0",
+          "description": "Identity platform for application authentication and authorization.",
+          "strengths": ["Enterprise identity", "Provider support"],
+          "icon": "auth0",
+          "website": "https://auth0.com"
+        },
+        {
+          "id": "workos",
+          "name": "WorkOS",
+          "description": "Enterprise-ready authentication and user management APIs.",
+          "strengths": ["SSO support", "Directory sync"],
+          "icon": "workos",
+          "website": "https://workos.com"
+        },
+        {
+          "id": "firebase-auth",
+          "name": "Firebase Auth",
+          "description": "Managed authentication service for Firebase applications.",
+          "strengths": ["Client SDKs", "Social providers"],
+          "icon": "firebase",
+          "website": "https://firebase.google.com/products/auth"
+        },
+        {
+          "id": "better-auth",
+          "name": "Better Auth",
+          "description": "Open-source authentication framework for TypeScript.",
+          "strengths": ["Framework agnostic", "Self hosted"],
+          "icon": "typescript",
+          "website": "https://www.better-auth.com"
+        },
+        {
+          "id": "aws-cognito",
+          "name": "AWS Cognito",
+          "description": "Managed identity service for web and mobile applications.",
+          "strengths": ["AWS integration", "User pools"],
+          "icon": "amazonaws",
+          "website": "https://aws.amazon.com/cognito"
+        },
+        {
+          "id": "microsoft-entra-id",
+          "name": "Microsoft Entra ID",
+          "description": "Cloud identity and access management from Microsoft.",
+          "strengths": ["Enterprise identity", "Microsoft integration"],
+          "icon": "microsoftazure",
+          "website": "https://www.microsoft.com/security/business/identity-access/microsoft-entra-id"
+        }
+      ]
+    },
+    {
+      "id": "blob-storage",
+      "domain": "backend",
+      "name": "File / Blob Storage",
+      "description": "Object storage for files and media",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "s3",
+          "name": "Amazon S3",
+          "description": "Durable object storage for any scale.",
+          "strengths": ["Industry standard", "Deep AWS support"],
+          "icon": "amazons3",
+          "website": "https://aws.amazon.com/s3"
+        },
+        {
+          "id": "cloudflare-r2",
+          "name": "Cloudflare R2",
+          "description": "S3-compatible object storage without egress fees.",
+          "strengths": ["No egress fees", "Edge adjacent"],
+          "icon": "cloudflare",
+          "website": "https://www.cloudflare.com/developer-platform/r2"
+        },
+        {
+          "id": "vercel-blob",
+          "name": "Vercel Blob",
+          "description": "Simple file storage for Vercel applications.",
+          "strengths": ["Direct uploads", "Vercel integration"],
+          "icon": "vercel",
+          "website": "https://vercel.com/docs/storage/vercel-blob"
+        },
+        {
+          "id": "google-cloud-storage",
+          "name": "Google Cloud Storage",
+          "description": "Durable object storage service on Google Cloud.",
+          "strengths": ["Global storage", "Google Cloud integration"],
+          "icon": "googlecloud",
+          "website": "https://cloud.google.com/storage"
+        },
+        {
+          "id": "azure-blob-storage",
+          "name": "Azure Blob Storage",
+          "description": "Scalable object storage service on Microsoft Azure.",
+          "strengths": ["Managed storage", "Azure integration"],
+          "icon": "microsoftazure",
+          "website": "https://azure.microsoft.com/products/storage/blobs"
+        },
+        {
+          "id": "uploadthing",
+          "name": "UploadThing",
+          "description": "File upload toolkit for TypeScript web applications.",
+          "strengths": ["Simple uploads", "TypeScript support"],
+          "icon": "typescript",
+          "website": "https://uploadthing.com"
+        },
+        {
+          "id": "minio",
+          "name": "MinIO",
+          "description": "S3-compatible object storage for private cloud and edge.",
+          "strengths": ["S3 compatible", "Self hosted"],
+          "icon": "minio",
+          "website": "https://min.io"
+        },
+        {
+          "id": "seaweedfs",
+          "name": "SeaweedFS",
+          "description": "Distributed file system for fast object and file storage.",
+          "strengths": ["High performance", "S3 compatible"],
+          "icon": "seaweedfs",
+          "website": "https://seaweedfs.com"
+        },
+        {
+          "id": "backblaze-b2",
+          "name": "Backblaze B2",
+          "description": "Low-cost cloud object storage with S3-compatible API.",
+          "strengths": ["Low cost", "S3 compatible"],
+          "icon": "backblaze",
+          "website": "https://www.backblaze.com/cloud-storage"
+        }
+      ]
+    },
+    {
+      "id": "monitoring",
+      "domain": "backend",
+      "name": "Monitoring / APM",
+      "description": "Application health and performance",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "sentry",
+          "name": "Sentry",
+          "description": "Error tracking and performance monitoring.",
+          "strengths": ["Issue context", "Release health"],
+          "icon": "sentry",
+          "website": "https://sentry.io"
+        },
+        {
+          "id": "datadog",
+          "name": "Datadog",
+          "description": "Unified cloud monitoring and observability.",
+          "strengths": ["Broad integrations", "Rich dashboards"],
+          "icon": "datadog",
+          "website": "https://www.datadoghq.com"
+        },
+        {
+          "id": "grafana",
+          "name": "Grafana",
+          "description": "Open platform for visualizing observability data.",
+          "strengths": ["Flexible dashboards", "Open ecosystem"],
+          "icon": "grafana",
+          "website": "https://grafana.com"
+        },
+        {
+          "id": "new-relic",
+          "name": "New Relic",
+          "description": "Observability platform for application performance and telemetry.",
+          "strengths": ["Full-stack visibility", "APM tooling"],
+          "icon": "newrelic",
+          "website": "https://newrelic.com"
+        },
+        {
+          "id": "aws-cloudwatch",
+          "name": "AWS CloudWatch",
+          "description": "Monitoring and logging service for AWS workloads.",
+          "strengths": ["AWS integration", "Metrics and logs"],
+          "icon": "amazoncloudwatch",
+          "website": "https://aws.amazon.com/cloudwatch"
+        },
+        {
+          "id": "google-cloud-monitoring",
+          "name": "Google Cloud Monitoring",
+          "description": "Observability service for Google Cloud infrastructure and apps.",
+          "strengths": ["Google Cloud integration", "Managed metrics"],
+          "icon": "googlecloud",
+          "website": "https://cloud.google.com/monitoring"
+        },
+        {
+          "id": "prometheus",
+          "name": "Prometheus",
+          "description": "Open-source monitoring system and time-series database.",
+          "strengths": ["Open ecosystem", "Powerful querying"],
+          "icon": "prometheus",
+          "website": "https://prometheus.io"
+        },
+        {
+          "id": "honeycomb",
+          "name": "Honeycomb",
+          "description": "Observability platform for understanding production systems.",
+          "strengths": ["High-cardinality data", "Fast debugging"],
+          "icon": "honeycomb",
+          "website": "https://www.honeycomb.io"
+        },
+        {
+          "id": "axiom",
+          "name": "Axiom",
+          "description": "Cloud observability platform for logs, traces, and analytics.",
+          "strengths": ["Fast queries", "Flexible ingestion"],
+          "icon": "axiom",
+          "website": "https://axiom.co"
+        },
+        {
+          "id": "better-stack",
+          "name": "Better Stack",
+          "description": "Incident management, uptime monitoring, and log management platform.",
+          "strengths": ["Incident response", "Unified visibility"],
+          "icon": "betterstack",
+          "website": "https://betterstack.com"
+        }
+      ]
+    },
+    {
+      "id": "product-analytics",
+      "domain": "backend",
+      "name": "Product Analytics",
+      "description": "Understand how people use product features",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "posthog",
+          "name": "PostHog",
+          "description": "Product analytics platform with events, feature flags, and replay.",
+          "strengths": ["All-in-one tooling", "Self-hosting option"],
+          "icon": "posthog",
+          "website": "https://posthog.com"
+        },
+        {
+          "id": "amplitude",
+          "name": "Amplitude",
+          "description": "Digital analytics platform for measuring product behavior.",
+          "strengths": ["Behavioral analysis", "Experiment insights"],
+          "icon": "amplitude",
+          "website": "https://amplitude.com"
+        },
+        {
+          "id": "mixpanel",
+          "name": "Mixpanel",
+          "description": "Event-based analytics for product teams.",
+          "strengths": ["Funnels", "Retention analysis"],
+          "icon": "mixpanel",
+          "website": "https://mixpanel.com"
+        },
+        {
+          "id": "heap",
+          "name": "Heap",
+          "description": "Digital insights platform with automatic event capture.",
+          "strengths": ["Auto-capture", "Journey analysis"],
+          "icon": "heap",
+          "website": "https://www.heap.io"
+        },
+        {
+          "id": "june",
+          "name": "June",
+          "description": "Product analytics built for B2B SaaS teams.",
+          "strengths": ["B2B focus", "Simple reports"],
+          "icon": "june",
+          "website": "https://www.june.so"
+        },
+        {
+          "id": "statsig",
+          "name": "Statsig",
+          "description": "Platform for product experimentation and feature flags.",
+          "strengths": ["Experiments", "Feature gates"],
+          "icon": "statsig",
+          "website": "https://statsig.com"
+        }
+      ]
+    },
+    {
+      "id": "web-analytics",
+      "domain": "backend",
+      "name": "Web Analytics",
+      "description": "Privacy-conscious product traffic insights",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "plausible",
+          "name": "Plausible",
+          "description": "Simple privacy-friendly web analytics.",
+          "strengths": ["Lightweight", "No cookies"],
+          "icon": "plausibleanalytics",
+          "website": "https://plausible.io"
+        },
+        {
+          "id": "vercel-analytics",
+          "name": "Vercel Analytics",
+          "description": "Web vitals and traffic analytics for Vercel.",
+          "strengths": ["Zero config", "Core Web Vitals"],
+          "icon": "vercel",
+          "website": "https://vercel.com/analytics"
+        },
+        {
+          "id": "google-analytics",
+          "name": "Google Analytics",
+          "description": "Widely used web measurement platform.",
+          "strengths": ["Rich reporting", "Google ecosystem"],
+          "icon": "googleanalytics",
+          "website": "https://analytics.google.com"
+        },
+        {
+          "id": "fathom",
+          "name": "Fathom",
+          "description": "Privacy-focused website analytics with simple reporting.",
+          "strengths": ["Privacy focused", "Simple reports"],
+          "icon": "fathom",
+          "website": "https://usefathom.com"
+        },
+        {
+          "id": "simple-analytics",
+          "name": "Simple Analytics",
+          "description": "Privacy-first web analytics without invasive tracking.",
+          "strengths": ["No cookies", "Clear metrics"],
+          "icon": "simpleanalytics",
+          "website": "https://www.simpleanalytics.com"
+        }
+      ]
+    },
+    {
+      "id": "transactional-email",
+      "domain": "backend",
+      "name": "Transactional Email",
+      "description": "Critical product messages",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "resend",
+          "name": "Resend",
+          "description": "Email API built for developers.",
+          "strengths": ["React emails", "Simple API"],
+          "icon": "resend",
+          "website": "https://resend.com"
+        },
+        {
+          "id": "postmark",
+          "name": "Postmark",
+          "description": "Reliable transactional email delivery.",
+          "strengths": ["Fast delivery", "Clear logs"],
+          "icon": "postmark",
+          "website": "https://postmarkapp.com"
+        },
+        {
+          "id": "ses",
+          "name": "Amazon SES",
+          "description": "Cost-effective email sending on AWS.",
+          "strengths": ["Low cost", "AWS integration"],
+          "icon": "amazon",
+          "website": "https://aws.amazon.com/ses"
+        },
+        {
+          "id": "sendgrid",
+          "name": "SendGrid",
+          "description": "Cloud email platform for transactional and marketing messages.",
+          "strengths": ["Delivery tooling", "Template support"],
+          "icon": "sendgrid",
+          "website": "https://sendgrid.com"
+        },
+        {
+          "id": "mailgun",
+          "name": "Mailgun",
+          "description": "Email API service for sending and tracking messages.",
+          "strengths": ["Email APIs", "Delivery analytics"],
+          "icon": "mailgun",
+          "website": "https://www.mailgun.com"
+        },
+        {
+          "id": "loops",
+          "name": "Loops",
+          "description": "Lifecycle email platform built for product teams.",
+          "strengths": ["Product emails", "Easy automation"],
+          "icon": "loops",
+          "website": "https://loops.so"
+        }
+      ]
+    },
+    {
+      "id": "payments",
+      "domain": "backend",
+      "name": "Payments",
+      "description": "Billing and checkout infrastructure",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "stripe",
+          "name": "Stripe",
+          "description": "Payments platform for online businesses.",
+          "strengths": ["Excellent docs", "Global payments"],
+          "icon": "stripe",
+          "website": "https://stripe.com"
+        },
+        {
+          "id": "lemonsqueezy",
+          "name": "Lemon Squeezy",
+          "description": "Merchant of record for digital products.",
+          "strengths": ["Tax handling", "Subscriptions"],
+          "icon": "lemonsqueezy",
+          "website": "https://www.lemonsqueezy.com"
+        },
+        {
+          "id": "paddle",
+          "name": "Paddle",
+          "description": "Revenue delivery platform for SaaS.",
+          "strengths": ["Merchant of record", "SaaS billing"],
+          "icon": "paddle",
+          "website": "https://www.paddle.com"
+        },
+        {
+          "id": "polar",
+          "name": "Polar",
+          "description": "Open-source monetization platform for developer products.",
+          "strengths": ["Developer focused", "Subscriptions"],
+          "icon": "polar",
+          "website": "https://polar.sh"
+        },
+        {
+          "id": "paypal",
+          "name": "PayPal",
+          "description": "Global payments platform for online checkout.",
+          "strengths": ["Broad reach", "Buyer trust"],
+          "icon": "paypal",
+          "website": "https://www.paypal.com"
+        }
+      ]
+    },
+    {
+      "id": "ai-llm",
+      "domain": "backend",
+      "name": "AI / LLM",
+      "description": "Generative AI models and APIs",
+      "mode": "multi",
+      "technologies": [
+        {
+          "id": "claude",
+          "name": "Anthropic Claude",
+          "description": "Capable language models from Anthropic.",
+          "strengths": ["Strong reasoning", "Long context"],
+          "icon": "anthropic",
+          "website": "https://www.anthropic.com"
+        },
+        {
+          "id": "openai",
+          "name": "OpenAI",
+          "description": "General-purpose AI models and tools.",
+          "strengths": ["Broad capabilities", "Mature API"],
+          "icon": "openai",
+          "website": "https://openai.com"
+        },
+        {
+          "id": "gemini",
+          "name": "Google Gemini",
+          "description": "Multimodal AI models from Google.",
+          "strengths": ["Google integration", "Multimodal"],
+          "icon": "googlegemini",
+          "website": "https://ai.google.dev"
+        },
+        {
+          "id": "replicate",
+          "name": "Replicate",
+          "description": "Platform for running and fine-tuning AI models through an API.",
+          "strengths": ["Model variety", "Simple API"],
+          "icon": "replicate",
+          "website": "https://replicate.com"
+        },
+        {
+          "id": "together-ai",
+          "name": "Together AI",
+          "description": "Cloud platform for open AI models and inference.",
+          "strengths": ["Open models", "Fast inference"],
+          "icon": "together",
+          "website": "https://www.together.ai"
+        },
+        {
+          "id": "groq",
+          "name": "Groq",
+          "description": "High-speed inference platform for AI workloads.",
+          "strengths": ["Fast inference", "Low latency"],
+          "icon": "groq",
+          "website": "https://groq.com"
+        },
+        {
+          "id": "langchain",
+          "name": "LangChain",
+          "description": "Framework for building LLM-powered applications and agents.",
+          "strengths": ["Agent orchestration", "Rich integrations"],
+          "icon": "langchain",
+          "website": "https://www.langchain.com"
+        },
+        {
+          "id": "llamaindex",
+          "name": "LlamaIndex",
+          "description": "Data framework for connecting LLMs to external data sources.",
+          "strengths": ["Data ingestion", "RAG pipelines"],
+          "icon": "llamaindex",
+          "website": "https://www.llamaindex.ai"
+        },
+        {
+          "id": "huggingface",
+          "name": "Hugging Face",
+          "description": "Platform for open-source models, datasets, and ML tools.",
+          "strengths": ["Model hub", "Open ecosystem"],
+          "icon": "huggingface",
+          "website": "https://huggingface.co"
+        },
+        {
+          "id": "ollama",
+          "name": "Ollama",
+          "description": "Run open-source LLMs locally with a simple CLI.",
+          "strengths": ["Local inference", "Easy setup"],
+          "icon": "ollama",
+          "website": "https://ollama.ai"
+        },
+        {
+          "id": "deepseek",
+          "name": "DeepSeek",
+          "description": "Powerful open-weight language models for reasoning and coding.",
+          "strengths": ["Strong reasoning", "Open weights"],
+          "icon": "deepseek",
+          "website": "https://www.deepseek.com"
+        },
+        {
+          "id": "mistral",
+          "name": "Mistral AI",
+          "description": "Efficient open-weight language models for developers.",
+          "strengths": ["Performance", "Open models"],
+          "icon": "mistral",
+          "website": "https://mistral.ai"
+        },
+        {
+          "id": "cohere",
+          "name": "Cohere",
+          "description": "Enterprise AI platform for search, generation, and classification.",
+          "strengths": ["RAG tooling", "Enterprise focus"],
+          "icon": "cohere",
+          "website": "https://cohere.com"
+        },
+        {
+          "id": "vercel-ai-gateway",
+          "name": "Vercel AI Gateway",
+          "description": "Unified gateway for accessing AI models in Vercel applications.",
+          "strengths": ["Provider routing", "Vercel integration"],
+          "icon": "vercel",
+          "website": "https://vercel.com/ai-gateway"
+        },
+        {
+          "id": "vercel-ai-sdk",
+          "name": "Vercel AI SDK",
+          "description": "TypeScript toolkit for building AI-powered applications.",
+          "strengths": ["Framework agnostic", "Streaming support"],
+          "icon": "vercel",
+          "website": "https://sdk.vercel.ai"
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "domain": "backend",
+      "name": "Search",
+      "description": "Search experiences for application data",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "algolia",
+          "name": "Algolia",
+          "description": "Hosted search with instant results.",
+          "strengths": ["Fast relevance", "Polished UI tools"],
+          "icon": "algolia",
+          "website": "https://www.algolia.com"
+        },
+        {
+          "id": "meilisearch",
+          "name": "Meilisearch",
+          "description": "Open-source search engine for fast setup.",
+          "strengths": ["Typo tolerance", "Simple API"],
+          "icon": "meilisearch",
+          "website": "https://www.meilisearch.com"
+        },
+        {
+          "id": "typesense",
+          "name": "Typesense",
+          "description": "Fast open-source search optimized for instant UX.",
+          "strengths": ["Low latency", "Developer friendly"],
+          "icon": "typesense",
+          "website": "https://typesense.org"
+        },
+        {
+          "id": "elastic",
+          "name": "Elastic",
+          "description": "Search and analytics platform for scalable application data.",
+          "strengths": ["Powerful queries", "Large-scale search"],
+          "icon": "elastic",
+          "website": "https://www.elastic.co"
+        },
+        {
+          "id": "postgres-fts",
+          "name": "Postgres FTS",
+          "description": "Built-in full-text search capabilities in PostgreSQL.",
+          "strengths": ["No extra service", "SQL integration"],
+          "icon": "postgresql",
+          "website": "https://www.postgresql.org/docs/current/textsearch.html"
+        }
+      ]
+    },
+    {
+      "id": "cms-content",
+      "domain": "backend",
+      "name": "CMS / Content",
+      "description": "Editorial and structured content",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "sanity",
+          "name": "Sanity",
+          "description": "Flexible content platform with real-time collaboration.",
+          "strengths": ["Custom schemas", "Realtime editing"],
+          "icon": "sanity",
+          "website": "https://www.sanity.io"
+        },
+        {
+          "id": "contentful",
+          "name": "Contentful",
+          "description": "API-first composable content platform.",
+          "strengths": ["Enterprise ready", "Editorial workflows"],
+          "icon": "contentful",
+          "website": "https://www.contentful.com"
+        },
+        {
+          "id": "payload",
+          "name": "Payload",
+          "description": "Code-first TypeScript headless CMS.",
+          "strengths": ["Self hosted", "Extensible"],
+          "icon": "payloadcms",
+          "website": "https://payloadcms.com"
+        },
+        {
+          "id": "strapi",
+          "name": "Strapi",
+          "description": "Open-source headless CMS with customizable APIs.",
+          "strengths": ["Self hosted", "Flexible content types"],
+          "icon": "strapi",
+          "website": "https://strapi.io"
+        },
+        {
+          "id": "notion",
+          "name": "Notion",
+          "description": "Collaborative workspace that can power structured content.",
+          "strengths": ["Familiar editor", "Collaboration"],
+          "icon": "notion",
+          "website": "https://www.notion.so"
+        },
+        {
+          "id": "markdown-mdx",
+          "name": "Markdown / MDX",
+          "description": "File-based content authored in Markdown with optional JSX.",
+          "strengths": ["Version controlled", "Developer friendly"],
+          "icon": "mdx",
+          "website": "https://mdxjs.com"
+        }
+      ]
+    },
+    {
+      "id": "cicd",
+      "domain": "backend",
+      "name": "CI / CD",
+      "description": "Automated quality and delivery",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "description": "Automation integrated into GitHub repositories.",
+          "strengths": ["Native GitHub", "Large marketplace"],
+          "icon": "githubactions",
+          "website": "https://github.com/features/actions"
+        },
+        {
+          "id": "circleci",
+          "name": "CircleCI",
+          "description": "Cloud-based continuous integration platform.",
+          "strengths": ["Fast pipelines", "Flexible config"],
+          "icon": "circleci",
+          "website": "https://circleci.com"
+        },
+        {
+          "id": "buildkite",
+          "name": "Buildkite",
+          "description": "Run CI agents in your own infrastructure.",
+          "strengths": ["Private execution", "Flexible pipelines"],
+          "icon": "buildkite",
+          "website": "https://buildkite.com"
+        },
+        {
+          "id": "vercel-deploys",
+          "name": "Vercel Deploys",
+          "description": "Automatic preview and production deployments on Vercel.",
+          "strengths": ["Preview deployments", "Git integration"],
+          "icon": "vercel",
+          "website": "https://vercel.com/docs/deployments"
+        },
+        {
+          "id": "gitlab-ci",
+          "name": "GitLab CI",
+          "description": "Integrated continuous integration and delivery for GitLab projects.",
+          "strengths": ["Integrated pipelines", "DevSecOps tooling"],
+          "icon": "gitlab",
+          "website": "https://docs.gitlab.com/ci"
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "domain": "backend",
+      "name": "Mobile",
+      "description": "Mobile application development",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "react-native",
+          "name": "React Native",
+          "description": "Native mobile apps with React and JavaScript.",
+          "strengths": ["Shared skills", "Large ecosystem"],
+          "icon": "react",
+          "website": "https://reactnative.dev"
+        },
+        {
+          "id": "flutter",
+          "name": "Flutter",
+          "description": "Cross-platform UI toolkit from Google.",
+          "strengths": ["Single codebase", "Native performance"],
+          "icon": "flutter",
+          "website": "https://flutter.dev"
+        },
+        {
+          "id": "expo",
+          "name": "Expo",
+          "description": "Toolchain and platform for React Native.",
+          "strengths": ["Fast iteration", "Managed services"],
+          "icon": "expo",
+          "website": "https://expo.dev"
+        },
+        {
+          "id": "swift-ios",
+          "name": "Swift (iOS)",
+          "description": "Apple's language for building native iOS applications.",
+          "strengths": ["Native performance", "Apple ecosystem"],
+          "icon": "swift",
+          "website": "https://developer.apple.com/swift"
+        },
+        {
+          "id": "kotlin-android",
+          "name": "Kotlin (Android)",
+          "description": "Official language for modern Android app development.",
+          "strengths": ["Android first", "Jetpack support"],
+          "icon": "kotlin",
+          "website": "https://developer.android.com/kotlin"
+        }
+      ]
+    },
+    {
+      "id": "api-gateway",
+      "domain": "backend",
+      "name": "API Gateway",
+      "description": "Central entry point for API traffic",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "nginx-gateway",
+          "name": "Nginx",
+          "description": "High-performance web server and reverse proxy, often used as an API gateway.",
+          "strengths": ["High performance", "Load balancing"],
+          "icon": "nginx",
+          "website": "https://nginx.org"
+        },
+        {
+          "id": "kong",
+          "name": "Kong",
+          "description": "Open-source API gateway with plugins for auth, rate limiting, and observability.",
+          "strengths": ["Plugin ecosystem", "Open source"],
+          "icon": "kong",
+          "website": "https://konghq.com"
+        },
+        {
+          "id": "aws-api-gateway",
+          "name": "Amazon API Gateway",
+          "description": "Fully managed AWS service for creating and managing REST, HTTP, and WebSocket APIs.",
+          "strengths": ["AWS integration", "Serverless ready"],
+          "icon": "amazonapigateway",
+          "website": "https://aws.amazon.com/api-gateway"
+        },
+        {
+          "id": "azure-api-management",
+          "name": "Azure API Management",
+          "description": "Managed API gateway with policy enforcement, analytics, and developer portal.",
+          "strengths": ["Policy engine", "Developer portal"],
+          "icon": "microsoftazure",
+          "website": "https://azure.microsoft.com/products/api-management"
+        },
+        {
+          "id": "cloudflare-api-gateway",
+          "name": "Cloudflare API Gateway",
+          "description": "Edge-native API gateway with rate limiting, caching, and bot management.",
+          "strengths": ["Edge network", "DDoS protection"],
+          "icon": "cloudflare",
+          "website": "https://www.cloudflare.com/api-gateway"
+        },
+        {
+          "id": "traefik",
+          "name": "Traefik",
+          "description": "Cloud-native reverse proxy and API gateway with automatic service discovery.",
+          "strengths": ["Auto discovery", "Kubernetes native"],
+          "icon": "traefikproxy",
+          "website": "https://traefik.io"
+        },
+        {
+          "id": "envoy",
+          "name": "Envoy",
+          "description": "High-performance L7 proxy and service mesh data plane.",
+          "strengths": ["Service mesh", "Advanced routing"],
+          "icon": "envoy",
+          "website": "https://www.envoyproxy.io"
+        },
+        {
+          "id": "haproxy",
+          "name": "HAProxy",
+          "description": "Reliable TCP/HTTP proxy and load balancer for high-availability applications.",
+          "strengths": ["High availability", "Battle tested"],
+          "icon": "haproxy",
+          "website": "https://www.haproxy.org"
+        },
+        {
+          "id": "google-cloud-api-gateway",
+          "name": "Google Cloud API Gateway",
+          "description": "Managed gateway for REST APIs with OpenAPI support and GCP integration.",
+          "strengths": ["OpenAPI support", "GCP integration"],
+          "icon": "googlecloud",
+          "website": "https://cloud.google.com/api-gateway"
+        }
+      ]
+    },
+    {
+      "id": "security-quality",
+      "domain": "backend",
+      "name": "Security / Quality",
+      "description": "Code security scanning and quality assurance",
+      "mode": "multi",
+      "technologies": [
+        {
+          "id": "sonarqube",
+          "name": "SonarQube",
+          "description": "Continuous code quality and security inspection platform.",
+          "strengths": ["Code quality metrics", "Security hotspots"],
+          "icon": "sonarqube",
+          "website": "https://www.sonarsource.com/products/sonarqube"
+        },
+        {
+          "id": "snyk",
+          "name": "Snyk",
+          "description": "Developer security platform for finding and fixing vulnerabilities.",
+          "strengths": ["Dependency scanning", "Container security"],
+          "icon": "snyk",
+          "website": "https://snyk.io"
+        },
+        {
+          "id": "trivy",
+          "name": "Trivy",
+          "description": "Open-source vulnerability scanner for containers, dependencies, and IaC.",
+          "strengths": ["Multi-target scanning", "Fast and simple"],
+          "icon": "trivy",
+          "website": "https://trivy.dev"
+        },
+        {
+          "id": "checkmarx",
+          "name": "Checkmarx",
+          "description": "Application security testing platform for SAST and SCA.",
+          "strengths": ["SAST scanning", "SCA support"],
+          "icon": "checkmarx",
+          "website": "https://checkmarx.com"
+        },
+        {
+          "id": "semgrep",
+          "name": "Semgrep",
+          "description": "Static analysis tool for finding bugs and enforcing code standards.",
+          "strengths": ["Custom rules", "Multi-language"],
+          "icon": "semgrep",
+          "website": "https://semgrep.dev"
+        },
+        {
+          "id": "codeql",
+          "name": "CodeQL",
+          "description": "Semantic code analysis engine for vulnerability discovery.",
+          "strengths": ["Deep analysis", "GitHub integration"],
+          "icon": "github",
+          "website": "https://codeql.github.com"
+        },
+        {
+          "id": "eslint-security",
+          "name": "ESLint (Security)",
+          "description": "Linting with security-focused plugins for JavaScript and TypeScript.",
+          "strengths": ["Custom rulesets", "CI integration"],
+          "icon": "eslint",
+          "website": "https://eslint.org"
+        },
+        {
+          "id": "husky",
+          "name": "Husky",
+          "description": "Git hooks tool for running quality checks before commits.",
+          "strengths": ["Pre-commit hooks", "Simple config"],
+          "icon": "husky",
+          "website": "https://typicode.github.io/husky"
+        },
+        {
+          "id": "pre-commit",
+          "name": "pre-commit",
+          "description": "Framework for managing and maintaining multi-language pre-commit hooks.",
+          "strengths": ["Multi-language", "Shared config"],
+          "icon": "precommit",
+          "website": "https://pre-commit.com"
+        },
+        {
+          "id": "dependabot",
+          "name": "Dependabot",
+          "description": "Automated dependency updates and security alerts for GitHub repos.",
+          "strengths": ["Auto PRs", "Security alerts"],
+          "icon": "dependabot",
+          "website": "https://github.com/dependabot"
+        },
+        {
+          "id": "renovate",
+          "name": "Renovate",
+          "description": "Automated dependency update tool with customizable configuration.",
+          "strengths": ["Flexible config", "Multi-platform"],
+          "icon": "renovate",
+          "website": "https://renovatebot.com"
+        }
+      ]
+    },
+        {
+      "id": "backend-custom",
+      "domain": "backend",
+      "name": "Custom",
+      "description": "Extra backend tools you want to keep",
+      "mode": "multi",
+      "technologies": [
+        {
+          "id": "terraform",
+          "name": "Terraform",
+          "description": "Infrastructure as code across cloud providers.",
+          "strengths": ["Declarative", "Multi-cloud"],
+          "icon": "terraform",
+          "website": "https://www.terraform.io"
+        },
+        {
+          "id": "docker",
+          "name": "Docker",
+          "description": "Containers for consistent application delivery.",
+          "strengths": ["Portable environments", "Mature tooling"],
+          "icon": "docker",
+          "website": "https://www.docker.com"
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "description": "Container orchestration for deploying, scaling, and managing containerized applications.",
+          "strengths": ["Auto scaling", "Self healing"],
+          "icon": "kubernetes",
+          "website": "https://kubernetes.io"
+        }
+      ]
+    },
+    {
+      "id": "frontend-framework",
+      "domain": "frontend",
+      "name": "Frontend Framework",
+      "description": "The browser application foundation",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "react",
+          "name": "React",
+          "description": "Component library for interactive user interfaces.",
+          "strengths": ["Huge ecosystem", "Flexible"],
+          "icon": "react",
+          "website": "https://react.dev"
+        },
+        {
+          "id": "nextjs",
+          "name": "Next.js",
+          "description": "React framework for full-stack web applications.",
+          "strengths": ["Server rendering", "Strong conventions"],
+          "icon": "nextdotjs",
+          "website": "https://nextjs.org"
+        },
+        {
+          "id": "vue",
+          "name": "Vue",
+          "description": "Progressive framework with approachable reactivity.",
+          "strengths": ["Gentle learning curve", "Single-file components"],
+          "icon": "vuedotjs",
+          "website": "https://vuejs.org"
+        },
+        {
+          "id": "svelte",
+          "name": "Svelte",
+          "description": "Compiler-driven framework for lightweight reactive interfaces.",
+          "strengths": ["Small runtime", "Simple reactivity"],
+          "icon": "svelte",
+          "website": "https://svelte.dev"
+        },
+        {
+          "id": "astro",
+          "name": "Astro",
+          "description": "Web framework for content-driven sites with selective hydration.",
+          "strengths": ["Fast by default", "Multi-framework support"],
+          "icon": "astro",
+          "website": "https://astro.build"
+        },
+        {
+          "id": "solidjs",
+          "name": "SolidJS",
+          "description": "Fine-grained reactive UI library with familiar JSX syntax.",
+          "strengths": ["Fine-grained reactivity", "Fast rendering"],
+          "icon": "solid",
+          "website": "https://www.solidjs.com"
+        },
+        {
+          "id": "angular",
+          "name": "Angular",
+          "description": "Full-featured TypeScript framework for large web applications.",
+          "strengths": ["Strong conventions", "Complete toolkit"],
+          "icon": "angular",
+          "website": "https://angular.dev"
+        },
+        {
+          "id": "remix",
+          "name": "Remix",
+          "description": "Full-stack React framework centered on web standards.",
+          "strengths": ["Web standards", "Nested routing"],
+          "icon": "remix",
+          "website": "https://remix.run"
+        },
+        {
+          "id": "nuxt",
+          "name": "Nuxt",
+          "description": "Full-stack framework for production Vue applications.",
+          "strengths": ["Vue ecosystem", "Server rendering"],
+          "icon": "nuxt",
+          "website": "https://nuxt.com"
+        },
+        {
+          "id": "blazor",
+          "name": "Blazor",
+          "description": "Build interactive web UIs with .NET and C#.",
+          "strengths": ["C# on the web", "Microsoft ecosystem"],
+          "icon": "dotnet",
+          "website": "https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"
+        },
+        {
+          "id": "htmx",
+          "name": "htmx",
+          "description": "Access AJAX, CSS transitions, and WebSockets directly in HTML.",
+          "strengths": ["Hypermedia driven", "No JS build"],
+          "icon": "htmx",
+          "website": "https://htmx.org"
+        },
+        {
+          "id": "alpinejs",
+          "name": "Alpine.js",
+          "description": "Lightweight JavaScript framework with declarative HTML attributes.",
+          "strengths": ["Minimal JS", "HTML-first"],
+          "icon": "alpinedotjs",
+          "website": "https://alpinejs.dev"
+        },
+        {
+          "id": "lit",
+          "name": "Lit",
+          "description": "Simple library for building fast, lightweight web components.",
+          "strengths": ["Web components", "Small footprint"],
+          "icon": "lit",
+          "website": "https://lit.dev"
+        }
+      ]
+    },
+    {
+      "id": "utility-css",
+      "domain": "frontend",
+      "name": "Utility-First CSS",
+      "description": "Composable styling primitives",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "tailwind",
+          "name": "Tailwind CSS",
+          "description": "Utility classes for custom interface design.",
+          "strengths": ["Fast iteration", "Design consistency"],
+          "icon": "tailwindcss",
+          "website": "https://tailwindcss.com"
+        },
+        {
+          "id": "unocss",
+          "name": "UnoCSS",
+          "description": "Instant on-demand atomic CSS engine.",
+          "strengths": ["Flexible presets", "Fast generation"],
+          "icon": "unocss",
+          "website": "https://unocss.dev"
+        },
+        {
+          "id": "panda",
+          "name": "Panda CSS",
+          "description": "Build-time CSS-in-JS with token support.",
+          "strengths": ["Type safe", "Zero runtime"],
+          "icon": "panda",
+          "website": "https://panda-css.com"
+        }
+      ]
+    },
+    {
+      "id": "component-ui",
+      "domain": "frontend",
+      "name": "Component UI",
+      "description": "Prebuilt interface components",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "shadcn",
+          "name": "shadcn/ui",
+          "description": "Copyable, customizable UI component recipes.",
+          "strengths": ["Own the code", "Accessible primitives"],
+          "icon": "shadcnui",
+          "website": "https://ui.shadcn.com"
+        },
+        {
+          "id": "mui",
+          "name": "MUI",
+          "description": "Comprehensive React component library.",
+          "strengths": ["Broad coverage", "Mature ecosystem"],
+          "icon": "mui",
+          "website": "https://mui.com"
+        },
+        {
+          "id": "chakra-ui",
+          "name": "Chakra UI",
+          "description": "Accessible React component library with composable styling.",
+          "strengths": ["Accessible defaults", "Themeable"],
+          "icon": "chakraui",
+          "website": "https://www.chakra-ui.com"
+        },
+        {
+          "id": "bootstrap",
+          "name": "Bootstrap",
+          "description": "Popular CSS framework with responsive UI components.",
+          "strengths": ["Familiar system", "Responsive utilities"],
+          "icon": "bootstrap",
+          "website": "https://getbootstrap.com"
+        },
+        {
+          "id": "ant-design",
+          "name": "Ant Design",
+          "description": "Enterprise-grade React UI library with a comprehensive design system.",
+          "strengths": ["Enterprise ready", "Rich components"],
+          "icon": "antdesign",
+          "website": "https://ant.design"
+        },
+        {
+          "id": "daisyui",
+          "name": "DaisyUI",
+          "description": "Tailwind CSS component library with themeable classes.",
+          "strengths": ["Tailwind integration", "Themes"],
+          "icon": "daisyui",
+          "website": "https://daisyui.com"
+        },
+        {
+          "id": "heroui",
+          "name": "Hero UI",
+          "description": "Modern React UI library with beautiful, accessible components.",
+          "strengths": ["Beautiful defaults", "Accessible"],
+          "icon": "heroui",
+          "website": "https://www.heroui.com"
+        },
+        {
+          "id": "prime-react",
+          "name": "PrimeReact",
+          "description": "Rich set of UI components for React applications.",
+          "strengths": ["Many components", "Theme system"],
+          "icon": "primereact",
+          "website": "https://primereact.org"
+        }
+      ]
+    },
+    {
+      "id": "headless-ui",
+      "domain": "frontend",
+      "name": "Headless UI",
+      "description": "Accessible behavior without fixed visuals",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "radix",
+          "name": "Radix UI",
+          "description": "Accessible unstyled UI primitives.",
+          "strengths": ["Well tested", "Composable"],
+          "icon": "radixui",
+          "website": "https://www.radix-ui.com"
+        },
+        {
+          "id": "headlessui",
+          "name": "Headless UI",
+          "description": "Unstyled accessible components from Tailwind Labs.",
+          "strengths": ["Tailwind friendly", "Simple API"],
+          "icon": "tailwindcss",
+          "website": "https://headlessui.com"
+        },
+        {
+          "id": "ark-ui",
+          "name": "Ark UI",
+          "description": "Headless UI library with accessible, unstyled components for React, Vue, and Solid.",
+          "strengths": ["Multi-framework", "WAI-ARIA compliant"],
+          "icon": "arkui",
+          "website": "https://ark-ui.com"
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "domain": "frontend",
+      "name": "Animation",
+      "description": "Purposeful movement and transitions",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "motion",
+          "name": "Motion",
+          "description": "Production-ready animations for React.",
+          "strengths": ["Declarative API", "Layout animation"],
+          "icon": "framer",
+          "website": "https://motion.dev"
+        },
+        {
+          "id": "gsap",
+          "name": "GSAP",
+          "description": "High-performance timeline animation library.",
+          "strengths": ["Precise control", "Broad capability"],
+          "icon": "greensock",
+          "website": "https://gsap.com"
+        },
+        {
+          "id": "lottie",
+          "name": "Lottie",
+          "description": "Render vector animation exports on the web.",
+          "strengths": ["Designer handoff", "Small files"],
+          "icon": "lottiefiles",
+          "website": "https://lottiefiles.com"
+        }
+      ]
+    },
+    {
+      "id": "charts",
+      "domain": "frontend",
+      "name": "Chart Library",
+      "description": "Visualize product and business data",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "recharts",
+          "name": "Recharts",
+          "description": "Composable charting components for React.",
+          "strengths": ["React native API", "Good defaults"],
+          "icon": "react",
+          "website": "https://recharts.org"
+        },
+        {
+          "id": "tremor",
+          "name": "Tremor",
+          "description": "Dashboard components and charts for React.",
+          "strengths": ["Fast dashboards", "Tailwind based"],
+          "icon": "tremor",
+          "website": "https://www.tremor.so"
+        },
+        {
+          "id": "echarts",
+          "name": "Apache ECharts",
+          "description": "Feature-rich charting and visualization library.",
+          "strengths": ["Many chart types", "Large data support"],
+          "icon": "apacheecharts",
+          "website": "https://echarts.apache.org"
+        },
+        {
+          "id": "apexcharts",
+          "name": "ApexCharts",
+          "description": "Modern interactive charting library for web applications.",
+          "strengths": ["Rich interactions", "Responsive"],
+          "icon": "apexcharts",
+          "website": "https://apexcharts.com"
+        },
+        {
+          "id": "chartjs",
+          "name": "Chart.js",
+          "description": "Simple yet flexible JavaScript charting library.",
+          "strengths": ["Easy to use", "Great docs"],
+          "icon": "chartdotjs",
+          "website": "https://www.chartjs.org"
+        }
+      ]
+    },
+    {
+      "id": "package-manager",
+      "domain": "frontend",
+      "name": "Package Manager",
+      "description": "Install and run project dependencies",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "bun-pm",
+          "name": "Bun",
+          "description": "Fast package manager included with Bun.",
+          "strengths": ["Fast installs", "Single runtime"],
+          "icon": "bun",
+          "website": "https://bun.sh"
+        },
+        {
+          "id": "pnpm",
+          "name": "pnpm",
+          "description": "Efficient package manager with strict dependencies.",
+          "strengths": ["Disk efficient", "Fast workspaces"],
+          "icon": "pnpm",
+          "website": "https://pnpm.io"
+        },
+        {
+          "id": "npm",
+          "name": "npm",
+          "description": "Default package manager for the Node ecosystem.",
+          "strengths": ["Universal", "Familiar"],
+          "icon": "npm",
+          "website": "https://www.npmjs.com"
+        },
+        {
+          "id": "yarn",
+          "name": "Yarn",
+          "description": "Fast and reliable package manager for JavaScript projects.",
+          "strengths": ["Workspaces", "Offline caching"],
+          "icon": "yarn",
+          "website": "https://yarnpkg.com"
+        },
+        {
+          "id": "nuget",
+          "name": "NuGet",
+          "description": "Package manager for the .NET ecosystem.",
+          "strengths": [".NET ecosystem", "Central package management"],
+          "icon": "nuget",
+          "website": "https://www.nuget.org"
+        },
+        {
+          "id": "cargo",
+          "name": "Cargo",
+          "description": "Build system and package manager for Rust.",
+          "strengths": ["Dependency resolution", "Built-in build tool"],
+          "icon": "cargo",
+          "website": "https://doc.rust-lang.org/cargo"
+        },
+        {
+          "id": "maven",
+          "name": "Maven",
+          "description": "Build automation and dependency management for Java projects.",
+          "strengths": ["Declarative builds", "Java ecosystem"],
+          "icon": "apachemaven",
+          "website": "https://maven.apache.org"
+        },
+        {
+          "id": "gradle",
+          "name": "Gradle",
+          "description": "Flexible build tool with incremental builds for JVM projects.",
+          "strengths": ["Incremental builds", "Multi-project support"],
+          "icon": "gradle",
+          "website": "https://gradle.org"
+        },
+        {
+          "id": "pip",
+          "name": "pip",
+          "description": "Standard package installer for Python packages.",
+          "strengths": ["Python ecosystem", "Simple CLI"],
+          "icon": "pypi",
+          "website": "https://pypi.org"
+        }
+      ]
+    },
+    {
+      "id": "query-library",
+      "domain": "frontend",
+      "name": "Query Library",
+      "description": "Fetch and synchronize server data",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "tanstack-query",
+          "name": "TanStack Query",
+          "description": "Async state and data fetching for React.",
+          "strengths": ["Caching", "Background updates"],
+          "icon": "reactquery",
+          "website": "https://tanstack.com/query"
+        },
+        {
+          "id": "swr",
+          "name": "SWR",
+          "description": "React hooks for data fetching and caching.",
+          "strengths": ["Small API", "Stale while revalidate"],
+          "icon": "vercel",
+          "website": "https://swr.vercel.app"
+        },
+        {
+          "id": "apollo",
+          "name": "Apollo Client",
+          "description": "GraphQL client with normalized caching.",
+          "strengths": ["GraphQL tooling", "Powerful cache"],
+          "icon": "apollographql",
+          "website": "https://www.apollographql.com"
+        }
+      ]
+    },
+    {
+      "id": "state-management",
+      "domain": "frontend",
+      "name": "State Management Library",
+      "description": "Coordinate client-side application state",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "zustand",
+          "name": "Zustand",
+          "description": "Small and flexible state management for React.",
+          "strengths": ["Minimal API", "No providers"],
+          "icon": "zustand",
+          "website": "https://zustand.docs.pmnd.rs"
+        },
+        {
+          "id": "redux",
+          "name": "Redux Toolkit",
+          "description": "Opinionated state management for larger apps.",
+          "strengths": ["Predictable", "Excellent tooling"],
+          "icon": "redux",
+          "website": "https://redux-toolkit.js.org"
+        },
+        {
+          "id": "jotai",
+          "name": "Jotai",
+          "description": "Atomic state model for React.",
+          "strengths": ["Composable atoms", "Small surface"],
+          "icon": "jotai",
+          "website": "https://jotai.org"
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "domain": "frontend",
+      "name": "Testing",
+      "description": "Verify application behavior",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "vitest",
+          "name": "Vitest",
+          "description": "Vite-native unit testing framework.",
+          "strengths": ["Fast feedback", "Vite integration"],
+          "icon": "vitest",
+          "website": "https://vitest.dev"
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "description": "Cross-browser end-to-end test automation.",
+          "strengths": ["Reliable automation", "Browser coverage"],
+          "icon": "playwright",
+          "website": "https://playwright.dev"
+        },
+        {
+          "id": "testing-library",
+          "name": "Testing Library",
+          "description": "User-focused testing utilities for UI.",
+          "strengths": ["Accessible queries", "Behavior oriented"],
+          "icon": "testinglibrary",
+          "website": "https://testing-library.com"
+        },
+        {
+          "id": "cypress",
+          "name": "Cypress",
+          "description": "End-to-end testing framework with real-time browser control.",
+          "strengths": ["Time travel", "Real-time reloads"],
+          "icon": "cypress",
+          "website": "https://www.cypress.io"
+        },
+        {
+          "id": "jest",
+          "name": "Jest",
+          "description": "Delightful JavaScript testing framework with batteries included.",
+          "strengths": ["Zero config", "Snapshot testing"],
+          "icon": "jest",
+          "website": "https://jestjs.io"
+        }
+      ]
+    },
+    {
+      "id": "validation",
+      "domain": "frontend",
+      "name": "Validation",
+      "description": "Validate structured user input",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "zod",
+          "name": "Zod",
+          "description": "TypeScript-first schema validation.",
+          "strengths": ["Type inference", "Clear errors"],
+          "icon": "zod",
+          "website": "https://zod.dev"
+        },
+        {
+          "id": "valibot",
+          "name": "Valibot",
+          "description": "Small modular schema validation library.",
+          "strengths": ["Tiny bundle", "Composable"],
+          "icon": "valibot",
+          "website": "https://valibot.dev"
+        },
+        {
+          "id": "yup",
+          "name": "Yup",
+          "description": "Popular schema builder for JavaScript.",
+          "strengths": ["Mature", "Form integrations"],
+          "icon": "yup",
+          "website": "https://github.com/jquense/yup"
+        }
+      ]
+    },
+    {
+      "id": "datetime",
+      "domain": "frontend",
+      "name": "Date / Time",
+      "description": "Work with dates, times, and time zones",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "datefns",
+          "name": "date-fns",
+          "description": "Modern JavaScript date utility functions.",
+          "strengths": ["Tree shakeable", "Native Date"],
+          "icon": "datefns",
+          "website": "https://date-fns.org"
+        },
+        {
+          "id": "dayjs",
+          "name": "Day.js",
+          "description": "Small immutable date-time library.",
+          "strengths": ["Moment-like API", "Tiny size"],
+          "icon": "dayjs",
+          "website": "https://day.js.org"
+        },
+        {
+          "id": "luxon",
+          "name": "Luxon",
+          "description": "Date-time library with timezone support.",
+          "strengths": ["Time zones", "Internationalization"],
+          "icon": "luxon",
+          "website": "https://moment.github.io/luxon"
+        }
+      ]
+    },
+    {
+      "id": "form-management",
+      "domain": "frontend",
+      "name": "Form Management",
+      "description": "Build and coordinate complex forms",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "react-hook-form",
+          "name": "React Hook Form",
+          "description": "Performant form state for React.",
+          "strengths": ["Minimal re-renders", "Small API"],
+          "icon": "reacthookform",
+          "website": "https://react-hook-form.com"
+        },
+        {
+          "id": "tanstack-form",
+          "name": "TanStack Form",
+          "description": "Headless form state management with types.",
+          "strengths": ["Type safe", "Framework agnostic"],
+          "icon": "tanstack",
+          "website": "https://tanstack.com/form"
+        },
+        {
+          "id": "formik",
+          "name": "Formik",
+          "description": "Established React form management library.",
+          "strengths": ["Mature", "Well known"],
+          "icon": "formik",
+          "website": "https://formik.org"
+        }
+      ]
+    },
+    {
+      "id": "data-manipulation",
+      "domain": "frontend",
+      "name": "Data Manipulation",
+      "description": "Transform and handle application data",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "lodash",
+          "name": "Lodash",
+          "description": "Utility functions for common data tasks.",
+          "strengths": ["Broad utility set", "Familiar"],
+          "icon": "lodash",
+          "website": "https://lodash.com"
+        },
+        {
+          "id": "ramda",
+          "name": "Ramda",
+          "description": "Functional programming utilities for JavaScript.",
+          "strengths": ["Immutable style", "Composable"],
+          "icon": "ramda",
+          "website": "https://ramdajs.com"
+        },
+        {
+          "id": "immer",
+          "name": "Immer",
+          "description": "Create immutable updates with mutable syntax.",
+          "strengths": ["Simple updates", "Works with React"],
+          "icon": "immer",
+          "website": "https://immerjs.github.io/immer"
+        }
+      ]
+    },
+    {
+      "id": "frontend-custom",
+      "domain": "frontend",
+      "name": "Custom",
+      "description": "Extra frontend tools you want to keep",
+      "mode": "multi",
+      "technologies": [
+        {
+          "id": "storybook",
+          "name": "Storybook",
+          "description": "Workshop for building UI components in isolation.",
+          "strengths": ["Document components", "Visual review"],
+          "icon": "storybook",
+          "website": "https://storybook.js.org"
+        },
+        {
+          "id": "figma",
+          "name": "Figma",
+          "description": "Collaborative design tool for product teams.",
+          "strengths": ["Team collaboration", "Design handoff"],
+          "icon": "figma",
+          "website": "https://www.figma.com"
+        },
+        {
+          "id": "sentry-replay",
+          "name": "Sentry Replay",
+          "description": "Session replay to understand frontend issues.",
+          "strengths": ["User context", "Error correlation"],
+          "icon": "sentry",
+          "website": "https://sentry.io/product/session-replay"
+        }
+      ]
+    }
+  ]
+}
