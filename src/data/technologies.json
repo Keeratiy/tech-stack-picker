@@ -1434,6 +1434,14 @@
           "strengths": ["Integrated pipelines", "DevSecOps tooling"],
           "icon": "gitlab",
           "website": "https://docs.gitlab.com/ci"
+        },
+        {
+          "id": "jenkins",
+          "name": "Jenkins",
+          "description": "Extensible automation server for CI/CD pipelines.",
+          "strengths": ["Highly customizable", "Large plugin ecosystem"],
+          "icon": "jenkins",
+          "website": "https://www.jenkins.io"
         }
       ]
     },
