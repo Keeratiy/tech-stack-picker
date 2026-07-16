@@ -1876,9 +1876,9 @@
       ]
     },
     {
-      "id": "backend-custom",
+      "id": "backend-other",
       "domain": "backend",
-      "name": "Custom",
+      "name": "Other",
       "description": "Extra backend tools you want to keep",
       "mode": "multi",
       "technologies": [
@@ -2571,9 +2571,9 @@
       ]
     },
     {
-      "id": "frontend-custom",
+      "id": "frontend-other",
       "domain": "frontend",
-      "name": "Custom",
+      "name": "Other",
       "description": "Extra frontend tools you want to keep",
       "mode": "multi",
       "technologies": [
