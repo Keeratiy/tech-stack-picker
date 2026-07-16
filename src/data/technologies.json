@@ -1737,6 +1737,144 @@
         }
       ]
     },
+    {
+      "id": "ide",
+      "domain": "backend",
+      "name": "IDE",
+      "description": "Code editors and development environments",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "cursor",
+          "name": "Cursor",
+          "description": "AI-first code editor built on VS Code with deep agentic capabilities.",
+          "strengths": ["AI native", "VS Code compatible"],
+          "icon": "cursor",
+          "website": "https://cursor.com"
+        },
+        {
+          "id": "vscode",
+          "name": "VS Code",
+          "description": "Lightweight, extensible code editor from Microsoft with rich ecosystem.",
+          "strengths": ["Extensible", "Large ecosystem"],
+          "icon": "visualstudiocode",
+          "website": "https://code.visualstudio.com"
+        },
+        {
+          "id": "windsurf",
+          "name": "Windsurf",
+          "description": "AI-powered IDE with agentic workflows and deep code understanding.",
+          "strengths": ["Agentic AI", "Code understanding"],
+          "icon": "windsurf",
+          "website": "https://windsurf.com"
+        },
+        {
+          "id": "jetbrains",
+          "name": "JetBrains IDEs",
+          "description": "Professional IDEs for Java, Python, JavaScript, and more.",
+          "strengths": ["Refactoring tools", "Language support"],
+          "icon": "jetbrains",
+          "website": "https://www.jetbrains.com"
+        },
+        {
+          "id": "neovim",
+          "name": "Neovim",
+          "description": "Modern extensible Vim-based editor for fast terminal editing.",
+          "strengths": ["Keyboard driven", "Lightweight"],
+          "icon": "neovim",
+          "website": "https://neovim.io"
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "description": "High-performance code editor built in Rust with AI features.",
+          "strengths": ["High performance", "Rust based"],
+          "icon": "zed",
+          "website": "https://zed.dev"
+        },
+        {
+          "id": "visual-studio",
+          "name": "Visual Studio",
+          "description": "Full-featured IDE from Microsoft for .NET, C++, and enterprise development.",
+          "strengths": ["Rich debugger", "Enterprise grade"],
+          "icon": "visualstudio",
+          "website": "https://visualstudio.microsoft.com"
+        }
+      ]
+    },
+    {
+      "id": "database-management",
+      "domain": "backend",
+      "name": "Database Management Tool",
+      "description": "Visual tools for exploring and managing databases",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "tableplus",
+          "name": "TablePlus",
+          "description": "Modern native database management tool with a clean interface.",
+          "strengths": ["Clean UI", "Multi-engine support"],
+          "icon": "tableplus",
+          "website": "https://tableplus.com"
+        },
+        {
+          "id": "datagrip",
+          "name": "DataGrip",
+          "description": "JetBrains IDE for databases and SQL with intelligent query console.",
+          "strengths": ["Smart SQL", "JetBrains ecosystem"],
+          "icon": "datagrip",
+          "website": "https://www.jetbrains.com/datagrip"
+        },
+        {
+          "id": "dbeaver",
+          "name": "DBeaver",
+          "description": "Universal database tool for developers and database administrators.",
+          "strengths": ["Universal support", "Free & open source"],
+          "icon": "dbeaver",
+          "website": "https://dbeaver.io"
+        },
+        {
+          "id": "pgadmin",
+          "name": "pgAdmin",
+          "description": "Open-source administration and management tool for PostgreSQL.",
+          "strengths": ["PostgreSQL focused", "Feature rich"],
+          "icon": "pgadmin",
+          "website": "https://www.pgadmin.org"
+        },
+        {
+          "id": "azure-data-studio",
+          "name": "Azure Data Studio",
+          "description": "Modern data management tool for SQL Server and Azure databases.",
+          "strengths": ["SQL Server focus", "Extension ecosystem"],
+          "icon": "azuredatastudio",
+          "website": "https://azure.microsoft.com/products/data-studio"
+        },
+        {
+          "id": "mysql-workbench",
+          "name": "MySQL Workbench",
+          "description": "Visual database design and administration tool for MySQL.",
+          "strengths": ["MySQL native", "Schema design"],
+          "icon": "mysql",
+          "website": "https://www.mysql.com/products/workbench"
+        },
+        {
+          "id": "supabase-studio",
+          "name": "Supabase Studio",
+          "description": "Built-in dashboard for managing Supabase Postgres databases.",
+          "strengths": ["Table editor", "SQL editor built in"],
+          "icon": "supabase",
+          "website": "https://supabase.com/dashboard"
+        },
+        {
+          "id": "prisma-studio",
+          "name": "Prisma Studio",
+          "description": "Visual editor for browsing and editing data in Prisma projects.",
+          "strengths": ["Prisma integration", "Quick data browsing"],
+          "icon": "prisma",
+          "website": "https://www.prisma.io/studio"
+        }
+      ]
+    },
         {
       "id": "backend-custom",
       "domain": "backend",
