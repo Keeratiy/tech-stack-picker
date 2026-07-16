@@ -1672,6 +1672,71 @@
         }
       ]
     },
+    {
+      "id": "api-documentation",
+      "domain": "backend",
+      "name": "API Documentation",
+      "description": "Design, document, and test APIs",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "scalar",
+          "name": "Scalar",
+          "description": "Open-source API platform with interactive documentation and testing.",
+          "strengths": ["Interactive docs", "API client built in"],
+          "icon": "scalar",
+          "website": "https://scalar.com"
+        },
+        {
+          "id": "swagger",
+          "name": "Swagger / OpenAPI",
+          "description": "Industry-standard framework for designing and documenting RESTful APIs.",
+          "strengths": ["OpenAPI standard", "Code generation"],
+          "icon": "swagger",
+          "website": "https://swagger.io"
+        },
+        {
+          "id": "redoc",
+          "name": "Redocly",
+          "description": "OpenAPI documentation generator with rich customization options.",
+          "strengths": ["Clean rendering", "API governance"],
+          "icon": "redoc",
+          "website": "https://redocly.com"
+        },
+        {
+          "id": "postman",
+          "name": "Postman",
+          "description": "Collaborative API platform for designing, testing, and documenting APIs.",
+          "strengths": ["API testing", "Team collaboration"],
+          "icon": "postman",
+          "website": "https://www.postman.com"
+        },
+        {
+          "id": "bruno",
+          "name": "Bruno",
+          "description": "Offline-first API client for exploring and testing APIs.",
+          "strengths": ["Offline first", "Git friendly"],
+          "icon": "bruno",
+          "website": "https://www.usebruno.com"
+        },
+        {
+          "id": "stoplight",
+          "name": "Stoplight",
+          "description": "API design platform with visual modeling and documentation.",
+          "strengths": ["Visual design", "OpenAPI support"],
+          "icon": "stoplight",
+          "website": "https://stoplight.io"
+        },
+        {
+          "id": "readme",
+          "name": "ReadMe",
+          "description": "Dynamic API documentation platform with interactive developer hubs.",
+          "strengths": ["Interactive hubs", "Developer metrics"],
+          "icon": "readme",
+          "website": "https://readme.com"
+        }
+      ]
+    },
         {
       "id": "backend-custom",
       "domain": "backend",
