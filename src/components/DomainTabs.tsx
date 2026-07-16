@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { Monitor, Server } from "lucide-react";
 import type { Domain } from "../types/catalog";
 
 interface DomainTabsProps {
@@ -6,9 +7,9 @@ interface DomainTabsProps {
   onChange: (domain: Domain) => void;
 }
 
-const domains: { key: Domain; label: string }[] = [
-  { key: "backend", label: "Backend" },
-  { key: "frontend", label: "Frontend" },
+const domains: { key: Domain; label: string; Icon: typeof Server }[] = [
+  { key: "backend", label: "Backend", Icon: Server },
+  { key: "frontend", label: "Frontend", Icon: Monitor },
 ];
 
 export function DomainTabs({ activeDomain, onChange }: DomainTabsProps) {
@@ -36,18 +37,19 @@ export function DomainTabs({ activeDomain, onChange }: DomainTabsProps) {
   return (
     <div
       className={`fixed left-6 z-50 flex flex-col overflow-hidden rounded-xl border border-rule bg-paper shadow-lg ${atBottom ? "bottom-auto top-6" : "bottom-6 top-auto"}`}
-      role="group"
       aria-label="Domain switcher"
     >
-      {domains.map(({ key, label }) => (
+      {domains.map(({ key, label, Icon }) => (
         <button
           key={key}
           type="button"
           aria-pressed={activeDomain === key}
+          aria-label={label}
+          title={label}
           onClick={() => handleClick(key)}
-          className={`px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] transition-colors focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-coral/30 ${activeDomain === key ? "bg-ink text-paper" : "text-muted hover:bg-white hover:text-ink"}`}
+          className={`grid size-10 place-items-center transition-colors focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-coral/30 ${activeDomain === key ? "bg-ink text-paper" : "text-muted hover:bg-white hover:text-ink"}`}
         >
-          {label}
+          <Icon className="size-4" aria-hidden="true" />
         </button>
       ))}
     </div>
