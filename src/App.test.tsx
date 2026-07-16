@@ -7,12 +7,44 @@ describe("Tech Stack Picker", () => {
   beforeEach(() => window.localStorage.clear());
   afterEach(cleanup);
 
+  it("defaults to the Backend domain", () => {
+    render(<App />);
+    const backendBtn = screen.getByRole("button", { name: "Backend" });
+    const frontendBtn = screen.getByRole("button", { name: "Frontend" });
+    expect(backendBtn).toHaveAttribute("aria-pressed", "true");
+    expect(frontendBtn).toHaveAttribute("aria-pressed", "false");
+    expect(
+      screen.getByRole("heading", { name: "Backend" }),
+    ).toBeInTheDocument();
+  });
+
+  it("switches between domains", () => {
+    render(<App />);
+    const frontendBtn = screen.getByRole("button", { name: "Frontend" });
+    fireEvent.click(frontendBtn);
+    expect(frontendBtn).toHaveAttribute("aria-pressed", "true");
+    expect(
+      screen.getByRole("heading", { name: "Frontend" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("heading", { name: "Backend" }),
+    ).not.toBeInTheDocument();
+
+    const backendBtn = screen.getByRole("button", { name: "Backend" });
+    fireEvent.click(backendBtn);
+    expect(backendBtn).toHaveAttribute("aria-pressed", "true");
+    expect(
+      screen.getByRole("heading", { name: "Backend" }),
+    ).toBeInTheDocument();
+  });
+
   it("opens a clear stack summary and returns with the selection intact", () => {
     render(<App />);
     expect(
       screen.queryByRole("button", { name: /view summary/i }),
     ).not.toBeInTheDocument();
 
+    fireEvent.click(screen.getByRole("button", { name: "Frontend" }));
     const react = screen.getByRole("button", { name: /^React$/i });
     fireEvent.click(react);
     fireEvent.click(screen.getByRole("button", { name: /view summary/i }));
@@ -50,6 +82,7 @@ describe("Tech Stack Picker", () => {
 
   it("updates the stack immediately, supports replacement, search, and reset", () => {
     render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: "Frontend" }));
     const react = screen.getByRole("button", { name: /^React$/i });
     const next = screen.getByRole("button", { name: /Next\.js$/i });
 
@@ -71,6 +104,7 @@ describe("Tech Stack Picker", () => {
       screen.getByRole("textbox", { name: /search technologies/i }),
       { target: { value: "serverless" } },
     );
+    fireEvent.click(screen.getByRole("button", { name: "Backend" }));
     expect(screen.getByText("AWS Lambda")).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: /clear stack/i }));

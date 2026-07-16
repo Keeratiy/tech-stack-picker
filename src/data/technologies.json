@@ -1154,135 +1154,6 @@
       ]
     },
     {
-      "id": "ai-llm",
-      "domain": "backend",
-      "name": "AI / LLM",
-      "description": "Generative AI models and APIs",
-      "mode": "multi",
-      "technologies": [
-        {
-          "id": "claude",
-          "name": "Anthropic Claude",
-          "description": "Capable language models from Anthropic.",
-          "strengths": ["Strong reasoning", "Long context"],
-          "icon": "anthropic",
-          "website": "https://www.anthropic.com"
-        },
-        {
-          "id": "openai",
-          "name": "OpenAI",
-          "description": "General-purpose AI models and tools.",
-          "strengths": ["Broad capabilities", "Mature API"],
-          "icon": "openai",
-          "website": "https://openai.com"
-        },
-        {
-          "id": "gemini",
-          "name": "Google Gemini",
-          "description": "Multimodal AI models from Google.",
-          "strengths": ["Google integration", "Multimodal"],
-          "icon": "googlegemini",
-          "website": "https://ai.google.dev"
-        },
-        {
-          "id": "replicate",
-          "name": "Replicate",
-          "description": "Platform for running and fine-tuning AI models through an API.",
-          "strengths": ["Model variety", "Simple API"],
-          "icon": "replicate",
-          "website": "https://replicate.com"
-        },
-        {
-          "id": "together-ai",
-          "name": "Together AI",
-          "description": "Cloud platform for open AI models and inference.",
-          "strengths": ["Open models", "Fast inference"],
-          "icon": "together",
-          "website": "https://www.together.ai"
-        },
-        {
-          "id": "groq",
-          "name": "Groq",
-          "description": "High-speed inference platform for AI workloads.",
-          "strengths": ["Fast inference", "Low latency"],
-          "icon": "groq",
-          "website": "https://groq.com"
-        },
-        {
-          "id": "langchain",
-          "name": "LangChain",
-          "description": "Framework for building LLM-powered applications and agents.",
-          "strengths": ["Agent orchestration", "Rich integrations"],
-          "icon": "langchain",
-          "website": "https://www.langchain.com"
-        },
-        {
-          "id": "llamaindex",
-          "name": "LlamaIndex",
-          "description": "Data framework for connecting LLMs to external data sources.",
-          "strengths": ["Data ingestion", "RAG pipelines"],
-          "icon": "llamaindex",
-          "website": "https://www.llamaindex.ai"
-        },
-        {
-          "id": "huggingface",
-          "name": "Hugging Face",
-          "description": "Platform for open-source models, datasets, and ML tools.",
-          "strengths": ["Model hub", "Open ecosystem"],
-          "icon": "huggingface",
-          "website": "https://huggingface.co"
-        },
-        {
-          "id": "ollama",
-          "name": "Ollama",
-          "description": "Run open-source LLMs locally with a simple CLI.",
-          "strengths": ["Local inference", "Easy setup"],
-          "icon": "ollama",
-          "website": "https://ollama.ai"
-        },
-        {
-          "id": "deepseek",
-          "name": "DeepSeek",
-          "description": "Powerful open-weight language models for reasoning and coding.",
-          "strengths": ["Strong reasoning", "Open weights"],
-          "icon": "deepseek",
-          "website": "https://www.deepseek.com"
-        },
-        {
-          "id": "mistral",
-          "name": "Mistral AI",
-          "description": "Efficient open-weight language models for developers.",
-          "strengths": ["Performance", "Open models"],
-          "icon": "mistral",
-          "website": "https://mistral.ai"
-        },
-        {
-          "id": "cohere",
-          "name": "Cohere",
-          "description": "Enterprise AI platform for search, generation, and classification.",
-          "strengths": ["RAG tooling", "Enterprise focus"],
-          "icon": "cohere",
-          "website": "https://cohere.com"
-        },
-        {
-          "id": "vercel-ai-gateway",
-          "name": "Vercel AI Gateway",
-          "description": "Unified gateway for accessing AI models in Vercel applications.",
-          "strengths": ["Provider routing", "Vercel integration"],
-          "icon": "vercel",
-          "website": "https://vercel.com/ai-gateway"
-        },
-        {
-          "id": "vercel-ai-sdk",
-          "name": "Vercel AI SDK",
-          "description": "TypeScript toolkit for building AI-powered applications.",
-          "strengths": ["Framework agnostic", "Streaming support"],
-          "icon": "vercel",
-          "website": "https://sdk.vercel.ai"
-        }
-      ]
-    },
-    {
       "id": "search",
       "domain": "backend",
       "name": "Search",
@@ -1875,7 +1746,136 @@
         }
       ]
     },
+    {
+      "id": "ai-llm",
+      "domain": "backend",
+      "name": "AI / LLM",
+      "description": "Generative AI models and APIs",
+      "mode": "multi",
+      "technologies": [
         {
+          "id": "claude",
+          "name": "Anthropic Claude",
+          "description": "Capable language models from Anthropic.",
+          "strengths": ["Strong reasoning", "Long context"],
+          "icon": "anthropic",
+          "website": "https://www.anthropic.com"
+        },
+        {
+          "id": "openai",
+          "name": "OpenAI",
+          "description": "General-purpose AI models and tools.",
+          "strengths": ["Broad capabilities", "Mature API"],
+          "icon": "openai",
+          "website": "https://openai.com"
+        },
+        {
+          "id": "gemini",
+          "name": "Google Gemini",
+          "description": "Multimodal AI models from Google.",
+          "strengths": ["Google integration", "Multimodal"],
+          "icon": "googlegemini",
+          "website": "https://ai.google.dev"
+        },
+        {
+          "id": "replicate",
+          "name": "Replicate",
+          "description": "Platform for running and fine-tuning AI models through an API.",
+          "strengths": ["Model variety", "Simple API"],
+          "icon": "replicate",
+          "website": "https://replicate.com"
+        },
+        {
+          "id": "together-ai",
+          "name": "Together AI",
+          "description": "Cloud platform for open AI models and inference.",
+          "strengths": ["Open models", "Fast inference"],
+          "icon": "together",
+          "website": "https://www.together.ai"
+        },
+        {
+          "id": "groq",
+          "name": "Groq",
+          "description": "High-speed inference platform for AI workloads.",
+          "strengths": ["Fast inference", "Low latency"],
+          "icon": "groq",
+          "website": "https://groq.com"
+        },
+        {
+          "id": "langchain",
+          "name": "LangChain",
+          "description": "Framework for building LLM-powered applications and agents.",
+          "strengths": ["Agent orchestration", "Rich integrations"],
+          "icon": "langchain",
+          "website": "https://www.langchain.com"
+        },
+        {
+          "id": "llamaindex",
+          "name": "LlamaIndex",
+          "description": "Data framework for connecting LLMs to external data sources.",
+          "strengths": ["Data ingestion", "RAG pipelines"],
+          "icon": "llamaindex",
+          "website": "https://www.llamaindex.ai"
+        },
+        {
+          "id": "huggingface",
+          "name": "Hugging Face",
+          "description": "Platform for open-source models, datasets, and ML tools.",
+          "strengths": ["Model hub", "Open ecosystem"],
+          "icon": "huggingface",
+          "website": "https://huggingface.co"
+        },
+        {
+          "id": "ollama",
+          "name": "Ollama",
+          "description": "Run open-source LLMs locally with a simple CLI.",
+          "strengths": ["Local inference", "Easy setup"],
+          "icon": "ollama",
+          "website": "https://ollama.ai"
+        },
+        {
+          "id": "deepseek",
+          "name": "DeepSeek",
+          "description": "Powerful open-weight language models for reasoning and coding.",
+          "strengths": ["Strong reasoning", "Open weights"],
+          "icon": "deepseek",
+          "website": "https://www.deepseek.com"
+        },
+        {
+          "id": "mistral",
+          "name": "Mistral AI",
+          "description": "Efficient open-weight language models for developers.",
+          "strengths": ["Performance", "Open models"],
+          "icon": "mistral",
+          "website": "https://mistral.ai"
+        },
+        {
+          "id": "cohere",
+          "name": "Cohere",
+          "description": "Enterprise AI platform for search, generation, and classification.",
+          "strengths": ["RAG tooling", "Enterprise focus"],
+          "icon": "cohere",
+          "website": "https://cohere.com"
+        },
+        {
+          "id": "vercel-ai-gateway",
+          "name": "Vercel AI Gateway",
+          "description": "Unified gateway for accessing AI models in Vercel applications.",
+          "strengths": ["Provider routing", "Vercel integration"],
+          "icon": "vercel",
+          "website": "https://vercel.com/ai-gateway"
+        },
+        {
+          "id": "vercel-ai-sdk",
+          "name": "Vercel AI SDK",
+          "description": "TypeScript toolkit for building AI-powered applications.",
+          "strengths": ["Framework agnostic", "Streaming support"],
+          "icon": "vercel",
+          "website": "https://sdk.vercel.ai"
+        }
+      ]
+    },
+    {
       "id": "backend-custom",
       "domain": "backend",
       "name": "Custom",
@@ -2022,39 +2022,6 @@
       ]
     },
     {
-      "id": "utility-css",
-      "domain": "frontend",
-      "name": "Utility-First CSS",
-      "description": "Composable styling primitives",
-      "mode": "single",
-      "technologies": [
-        {
-          "id": "tailwind",
-          "name": "Tailwind CSS",
-          "description": "Utility classes for custom interface design.",
-          "strengths": ["Fast iteration", "Design consistency"],
-          "icon": "tailwindcss",
-          "website": "https://tailwindcss.com"
-        },
-        {
-          "id": "unocss",
-          "name": "UnoCSS",
-          "description": "Instant on-demand atomic CSS engine.",
-          "strengths": ["Flexible presets", "Fast generation"],
-          "icon": "unocss",
-          "website": "https://unocss.dev"
-        },
-        {
-          "id": "panda",
-          "name": "Panda CSS",
-          "description": "Build-time CSS-in-JS with token support.",
-          "strengths": ["Type safe", "Zero runtime"],
-          "icon": "panda",
-          "website": "https://panda-css.com"
-        }
-      ]
-    },
-    {
       "id": "component-ui",
       "domain": "frontend",
       "name": "Component UI",
@@ -2124,6 +2091,39 @@
           "strengths": ["Many components", "Theme system"],
           "icon": "primereact",
           "website": "https://primereact.org"
+        }
+      ]
+    },
+    {
+      "id": "utility-css",
+      "domain": "frontend",
+      "name": "Utility-First CSS",
+      "description": "Composable styling primitives",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "tailwind",
+          "name": "Tailwind CSS",
+          "description": "Utility classes for custom interface design.",
+          "strengths": ["Fast iteration", "Design consistency"],
+          "icon": "tailwindcss",
+          "website": "https://tailwindcss.com"
+        },
+        {
+          "id": "unocss",
+          "name": "UnoCSS",
+          "description": "Instant on-demand atomic CSS engine.",
+          "strengths": ["Flexible presets", "Fast generation"],
+          "icon": "unocss",
+          "website": "https://unocss.dev"
+        },
+        {
+          "id": "panda",
+          "name": "Panda CSS",
+          "description": "Build-time CSS-in-JS with token support.",
+          "strengths": ["Type safe", "Zero runtime"],
+          "icon": "panda",
+          "website": "https://panda-css.com"
         }
       ]
     },
@@ -2324,6 +2324,55 @@
       ]
     },
     {
+      "id": "testing",
+      "domain": "frontend",
+      "name": "Testing",
+      "description": "Verify application behavior",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "vitest",
+          "name": "Vitest",
+          "description": "Vite-native unit testing framework.",
+          "strengths": ["Fast feedback", "Vite integration"],
+          "icon": "vitest",
+          "website": "https://vitest.dev"
+        },
+        {
+          "id": "playwright",
+          "name": "Playwright",
+          "description": "Cross-browser end-to-end test automation.",
+          "strengths": ["Reliable automation", "Browser coverage"],
+          "icon": "playwright",
+          "website": "https://playwright.dev"
+        },
+        {
+          "id": "testing-library",
+          "name": "Testing Library",
+          "description": "User-focused testing utilities for UI.",
+          "strengths": ["Accessible queries", "Behavior oriented"],
+          "icon": "testinglibrary",
+          "website": "https://testing-library.com"
+        },
+        {
+          "id": "cypress",
+          "name": "Cypress",
+          "description": "End-to-end testing framework with real-time browser control.",
+          "strengths": ["Time travel", "Real-time reloads"],
+          "icon": "cypress",
+          "website": "https://www.cypress.io"
+        },
+        {
+          "id": "jest",
+          "name": "Jest",
+          "description": "Delightful JavaScript testing framework with batteries included.",
+          "strengths": ["Zero config", "Snapshot testing"],
+          "icon": "jest",
+          "website": "https://jestjs.io"
+        }
+      ]
+    },
+    {
       "id": "query-library",
       "domain": "frontend",
       "name": "Query Library",
@@ -2386,55 +2435,6 @@
           "strengths": ["Composable atoms", "Small surface"],
           "icon": "jotai",
           "website": "https://jotai.org"
-        }
-      ]
-    },
-    {
-      "id": "testing",
-      "domain": "frontend",
-      "name": "Testing",
-      "description": "Verify application behavior",
-      "mode": "single",
-      "technologies": [
-        {
-          "id": "vitest",
-          "name": "Vitest",
-          "description": "Vite-native unit testing framework.",
-          "strengths": ["Fast feedback", "Vite integration"],
-          "icon": "vitest",
-          "website": "https://vitest.dev"
-        },
-        {
-          "id": "playwright",
-          "name": "Playwright",
-          "description": "Cross-browser end-to-end test automation.",
-          "strengths": ["Reliable automation", "Browser coverage"],
-          "icon": "playwright",
-          "website": "https://playwright.dev"
-        },
-        {
-          "id": "testing-library",
-          "name": "Testing Library",
-          "description": "User-focused testing utilities for UI.",
-          "strengths": ["Accessible queries", "Behavior oriented"],
-          "icon": "testinglibrary",
-          "website": "https://testing-library.com"
-        },
-        {
-          "id": "cypress",
-          "name": "Cypress",
-          "description": "End-to-end testing framework with real-time browser control.",
-          "strengths": ["Time travel", "Real-time reloads"],
-          "icon": "cypress",
-          "website": "https://www.cypress.io"
-        },
-        {
-          "id": "jest",
-          "name": "Jest",
-          "description": "Delightful JavaScript testing framework with batteries included.",
-          "strengths": ["Zero config", "Snapshot testing"],
-          "icon": "jest",
-          "website": "https://jestjs.io"
         }
       ]
     },

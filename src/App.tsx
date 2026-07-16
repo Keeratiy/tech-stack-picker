@@ -2,11 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import technologies from "./data/technologies.json";
 import { AppHeader } from "./components/AppHeader";
 import { DomainCatalog } from "./components/DomainCatalog";
+import { DomainTabs } from "./components/DomainTabs";
 import { MobileViewTabs } from "./components/MobileViewTabs";
 import { SelectedStack } from "./components/SelectedStack";
 import { StackSummary } from "./components/StackSummary";
 import { useStackPicker } from "./hooks/useStackPicker";
-import type { Catalog } from "./types/catalog";
+import type { Catalog, Domain } from "./types/catalog";
 
 const catalog = technologies as Catalog;
 
@@ -14,6 +15,7 @@ function App() {
   const picker = useStackPicker(catalog);
   const [pageView, setPageView] = useState<"picker" | "summary">("picker");
   const [mobileView, setMobileView] = useState<"picker" | "stack">("picker");
+  const [domainView, setDomainView] = useState<Domain>("backend");
   const shouldFocusView = useRef(false);
 
   useEffect(() => {
@@ -48,6 +50,7 @@ function App() {
 
   return (
     <main className="min-h-svh bg-paper text-ink">
+      <DomainTabs activeDomain={domainView} onChange={setDomainView} />
       <div className="mx-auto max-w-[1720px] px-4 py-4 sm:px-6 lg:px-8 lg:py-7">
         <AppHeader
           query={picker.query}
@@ -62,31 +65,31 @@ function App() {
         />
         <div className="mt-6 grid gap-6 lg:grid-cols-12 lg:gap-8">
           <section
+            id="technology-picker-section"
             className={`lg:col-span-10 ${mobileView === "stack" ? "hidden lg:block" : ""}`}
             aria-label="Technology picker"
           >
-            <DomainCatalog
-              domain="backend"
-              categories={picker.catalog.categories.filter(
-                (category) => category.domain === "backend",
-              )}
-              selections={picker.selections}
-              onToggle={picker.toggle}
-            />
-            <DomainCatalog
-              domain="frontend"
-              categories={picker.catalog.categories.filter(
-                (category) => category.domain === "frontend",
-              )}
-              selections={picker.selections}
-              onToggle={picker.toggle}
-              className="mt-10 border-t border-rule pt-10"
-            />
-            {!picker.catalog.categories.length && (
-              <div className="border border-dashed border-rule px-5 py-12 text-center text-sm text-muted">
-                No technologies match “{picker.query}”. Try a different term.
-              </div>
-            )}
+            {(() => {
+              const filtered = picker.catalog.categories.filter(
+                (category) => category.domain === domainView,
+              );
+              if (!filtered.length) {
+                return (
+                  <div className="border border-dashed border-rule px-5 py-12 text-center text-sm text-muted">
+                    No technologies match “{picker.query}”. Try a different
+                    term.
+                  </div>
+                );
+              }
+              return (
+                <DomainCatalog
+                  domain={domainView}
+                  categories={filtered}
+                  selections={picker.selections}
+                  onToggle={picker.toggle}
+                />
+              );
+            })()}
           </section>
           <aside
             className={`lg:col-span-2 ${mobileView === "picker" ? "hidden lg:block" : ""}`}
