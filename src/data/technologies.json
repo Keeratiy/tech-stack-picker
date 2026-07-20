@@ -447,6 +447,71 @@
       ]
     },
     {
+      "id": "vector-database",
+      "domain": "backend",
+      "name": "Vector Database",
+      "description": "Store and search vector embeddings for semantic applications",
+      "mode": "single",
+      "technologies": [
+        {
+          "id": "pinecone",
+          "name": "Pinecone",
+          "description": "Managed vector database for production AI applications.",
+          "strengths": ["Fully managed", "Low-latency search"],
+          "icon": "pinecone",
+          "website": "https://www.pinecone.io"
+        },
+        {
+          "id": "qdrant",
+          "name": "Qdrant",
+          "description": "Open-source vector similarity search engine with a cloud service.",
+          "strengths": ["Rich filtering", "Open source"],
+          "icon": "qdrant",
+          "website": "https://qdrant.tech"
+        },
+        {
+          "id": "weaviate",
+          "name": "Weaviate",
+          "description": "Open-source vector database for semantic and hybrid search.",
+          "strengths": ["Hybrid search", "Built-in modules"],
+          "icon": "weaviate",
+          "website": "https://weaviate.io"
+        },
+        {
+          "id": "milvus",
+          "name": "Milvus",
+          "description": "Open-source vector database built for high-scale similarity search.",
+          "strengths": ["Large-scale search", "Distributed architecture"],
+          "icon": "milvus",
+          "website": "https://milvus.io"
+        },
+        {
+          "id": "chroma",
+          "name": "Chroma",
+          "description": "Developer-friendly open-source database for AI embeddings.",
+          "strengths": ["Simple setup", "AI focused"],
+          "icon": "chroma",
+          "website": "https://www.trychroma.com"
+        },
+        {
+          "id": "pgvector",
+          "name": "pgvector",
+          "description": "PostgreSQL extension for storing and querying vector embeddings.",
+          "strengths": ["Postgres native", "SQL queries"],
+          "icon": "postgresql",
+          "website": "https://github.com/pgvector/pgvector"
+        },
+        {
+          "id": "lancedb",
+          "name": "LanceDB",
+          "description": "Developer-friendly vector database built on the Lance data format.",
+          "strengths": ["Embedded or hosted", "Multimodal data"],
+          "icon": "lancedb",
+          "website": "https://lancedb.com"
+        }
+      ]
+    },
+    {
       "id": "cdn",
       "domain": "backend",
       "name": "CDN",
@@ -1872,6 +1937,70 @@
           "strengths": ["Framework agnostic", "Streaming support"],
           "icon": "vercel",
           "website": "https://sdk.vercel.ai"
+        },
+        {
+          "id": "xai",
+          "name": "xAI Grok",
+          "description": "Language models and APIs from xAI.",
+          "strengths": ["Reasoning models", "Real-time information"],
+          "icon": "x",
+          "website": "https://x.ai"
+        },
+        {
+          "id": "perplexity",
+          "name": "Perplexity",
+          "description": "AI search and language model APIs with web-grounded responses.",
+          "strengths": ["Web grounding", "Search focused"],
+          "icon": "perplexity",
+          "website": "https://www.perplexity.ai"
+        },
+        {
+          "id": "amazon-bedrock",
+          "name": "Amazon Bedrock",
+          "description": "Managed AWS service for accessing foundation models through APIs.",
+          "strengths": ["Multi-model access", "AWS integration"],
+          "icon": "amazonaws",
+          "website": "https://aws.amazon.com/bedrock"
+        },
+        {
+          "id": "vertex-ai",
+          "name": "Vertex AI",
+          "description": "Google Cloud platform for building and deploying generative AI applications.",
+          "strengths": ["Google Cloud integration", "Model development tools"],
+          "icon": "googlecloud",
+          "website": "https://cloud.google.com/vertex-ai"
+        },
+        {
+          "id": "azure-ai-foundry",
+          "name": "Microsoft Foundry",
+          "description": "Microsoft platform for developing, evaluating, and deploying AI applications.",
+          "strengths": ["Enterprise governance", "Azure integration"],
+          "icon": "microsoftazure",
+          "website": "https://azure.microsoft.com/products/ai-foundry"
+        },
+        {
+          "id": "fireworks-ai",
+          "name": "Fireworks AI",
+          "description": "Fast inference platform for open and customizable AI models.",
+          "strengths": ["Fast inference", "Open model support"],
+          "icon": "fireworks",
+          "website": "https://fireworks.ai"
+        },
+        {
+          "id": "cerebras",
+          "name": "Cerebras",
+          "description": "High-speed AI inference and model hosting platform.",
+          "strengths": ["Very fast inference", "Large model support"],
+          "icon": "cerebras",
+          "website": "https://www.cerebras.ai"
+        },
+        {
+          "id": "vllm",
+          "name": "vLLM",
+          "description": "High-throughput open-source serving engine for language models.",
+          "strengths": ["High throughput", "Open source"],
+          "icon": "vllm",
+          "website": "https://docs.vllm.ai"
         }
       ]
     },
