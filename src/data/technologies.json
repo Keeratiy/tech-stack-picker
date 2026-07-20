@@ -1812,10 +1812,10 @@
       ]
     },
     {
-      "id": "ai-llm",
+      "id": "ai-foundation-models",
       "domain": "backend",
-      "name": "AI / LLM",
-      "description": "Generative AI models and APIs",
+      "name": "Foundation Models",
+      "description": "Hosted and open-weight models for generation and reasoning",
       "mode": "multi",
       "technologies": [
         {
@@ -1843,6 +1843,87 @@
           "website": "https://ai.google.dev"
         },
         {
+          "id": "deepseek",
+          "name": "DeepSeek",
+          "description": "Powerful open-weight language models for reasoning and coding.",
+          "strengths": ["Strong reasoning", "Open weights"],
+          "icon": "deepseek",
+          "website": "https://www.deepseek.com"
+        },
+        {
+          "id": "cohere",
+          "name": "Cohere",
+          "description": "Enterprise AI platform for search, generation, and classification.",
+          "strengths": ["RAG tooling", "Enterprise focus"],
+          "icon": "cohere",
+          "website": "https://cohere.com"
+        },
+        {
+          "id": "xai",
+          "name": "xAI Grok",
+          "description": "Language models and APIs from xAI.",
+          "strengths": ["Reasoning models", "Real-time information"],
+          "icon": "x",
+          "website": "https://x.ai"
+        },
+        {
+          "id": "qwen",
+          "name": "Qwen",
+          "description": "Open and proprietary language models from Alibaba Cloud.",
+          "strengths": ["Multilingual models", "Open-weight releases"],
+          "icon": "qwen",
+          "website": "https://qwen.ai"
+        },
+        {
+          "id": "glm",
+          "name": "GLM",
+          "description": "Bilingual and multimodal foundation models from Zhipu AI.",
+          "strengths": ["Bilingual support", "Multimodal models"],
+          "icon": "zhipu",
+          "website": "https://www.bigmodel.cn"
+        },
+        {
+          "id": "kimi",
+          "name": "Kimi",
+          "description": "Long-context language models from Moonshot AI.",
+          "strengths": ["Long context", "Chinese language support"],
+          "icon": "moonshot",
+          "website": "https://www.moonshot.cn"
+        },
+        {
+          "id": "minimax",
+          "name": "MiniMax",
+          "description": "Multimodal foundation models and APIs from MiniMax.",
+          "strengths": ["Multimodal generation", "Conversational models"],
+          "icon": "minimax",
+          "website": "https://www.minimaxi.com"
+        },
+        {
+          "id": "meta-muse",
+          "name": "Meta Muse",
+          "description": "Generative AI model from Meta for creative content generation.",
+          "strengths": ["Creative generation", "Meta AI ecosystem"],
+          "icon": "meta",
+          "website": "https://ai.meta.com"
+        }
+      ]
+    },
+    {
+      "id": "ai-model-platforms",
+      "domain": "backend",
+      "name": "Model Platforms",
+      "description": "Platforms for discovering, accessing, and deploying AI models",
+      "mode": "multi",
+      "technologies": [
+        {
+          "id": "huggingface",
+          "name": "Hugging Face",
+          "description": "Platform for open-source models, datasets, and ML tools.",
+          "strengths": ["Model hub", "Open ecosystem"],
+          "icon": "huggingface",
+          "website": "https://huggingface.co"
+        },
+        {
           "id": "replicate",
           "name": "Replicate",
           "description": "Platform for running and fine-tuning AI models through an API.",
@@ -1857,94 +1938,6 @@
           "strengths": ["Open models", "Fast inference"],
           "icon": "together",
           "website": "https://www.together.ai"
-        },
-        {
-          "id": "groq",
-          "name": "Groq",
-          "description": "High-speed inference platform for AI workloads.",
-          "strengths": ["Fast inference", "Low latency"],
-          "icon": "groq",
-          "website": "https://groq.com"
-        },
-        {
-          "id": "langchain",
-          "name": "LangChain",
-          "description": "Framework for building LLM-powered applications and agents.",
-          "strengths": ["Agent orchestration", "Rich integrations"],
-          "icon": "langchain",
-          "website": "https://www.langchain.com"
-        },
-        {
-          "id": "llamaindex",
-          "name": "LlamaIndex",
-          "description": "Data framework for connecting LLMs to external data sources.",
-          "strengths": ["Data ingestion", "RAG pipelines"],
-          "icon": "llamaindex",
-          "website": "https://www.llamaindex.ai"
-        },
-        {
-          "id": "huggingface",
-          "name": "Hugging Face",
-          "description": "Platform for open-source models, datasets, and ML tools.",
-          "strengths": ["Model hub", "Open ecosystem"],
-          "icon": "huggingface",
-          "website": "https://huggingface.co"
-        },
-        {
-          "id": "ollama",
-          "name": "Ollama",
-          "description": "Run open-source LLMs locally with a simple CLI.",
-          "strengths": ["Local inference", "Easy setup"],
-          "icon": "ollama",
-          "website": "https://ollama.ai"
-        },
-        {
-          "id": "deepseek",
-          "name": "DeepSeek",
-          "description": "Powerful open-weight language models for reasoning and coding.",
-          "strengths": ["Strong reasoning", "Open weights"],
-          "icon": "deepseek",
-          "website": "https://www.deepseek.com"
-        },
-        {
-          "id": "mistral",
-          "name": "Mistral AI",
-          "description": "Efficient open-weight language models for developers.",
-          "strengths": ["Performance", "Open models"],
-          "icon": "mistral",
-          "website": "https://mistral.ai"
-        },
-        {
-          "id": "cohere",
-          "name": "Cohere",
-          "description": "Enterprise AI platform for search, generation, and classification.",
-          "strengths": ["RAG tooling", "Enterprise focus"],
-          "icon": "cohere",
-          "website": "https://cohere.com"
-        },
-        {
-          "id": "vercel-ai-gateway",
-          "name": "Vercel AI Gateway",
-          "description": "Unified gateway for accessing AI models in Vercel applications.",
-          "strengths": ["Provider routing", "Vercel integration"],
-          "icon": "vercel",
-          "website": "https://vercel.com/ai-gateway"
-        },
-        {
-          "id": "vercel-ai-sdk",
-          "name": "Vercel AI SDK",
-          "description": "TypeScript toolkit for building AI-powered applications.",
-          "strengths": ["Framework agnostic", "Streaming support"],
-          "icon": "vercel",
-          "website": "https://sdk.vercel.ai"
-        },
-        {
-          "id": "xai",
-          "name": "xAI Grok",
-          "description": "Language models and APIs from xAI.",
-          "strengths": ["Reasoning models", "Real-time information"],
-          "icon": "x",
-          "website": "https://x.ai"
         },
         {
           "id": "perplexity",
@@ -1977,6 +1970,23 @@
           "strengths": ["Enterprise governance", "Azure integration"],
           "icon": "microsoftazure",
           "website": "https://azure.microsoft.com/products/ai-foundry"
+        }
+      ]
+    },
+    {
+      "id": "ai-inference-hosting",
+      "domain": "backend",
+      "name": "Inference / Hosting",
+      "description": "Run and serve AI models with managed or self-hosted inference",
+      "mode": "multi",
+      "technologies": [
+        {
+          "id": "groq",
+          "name": "Groq",
+          "description": "High-speed inference platform for AI workloads.",
+          "strengths": ["Fast inference", "Low latency"],
+          "icon": "groq",
+          "website": "https://groq.com"
         },
         {
           "id": "fireworks-ai",
@@ -1995,12 +2005,61 @@
           "website": "https://www.cerebras.ai"
         },
         {
+          "id": "ollama",
+          "name": "Ollama",
+          "description": "Run open-source LLMs locally with a simple CLI.",
+          "strengths": ["Local inference", "Easy setup"],
+          "icon": "ollama",
+          "website": "https://ollama.ai"
+        },
+        {
           "id": "vllm",
           "name": "vLLM",
           "description": "High-throughput open-source serving engine for language models.",
           "strengths": ["High throughput", "Open source"],
           "icon": "vllm",
           "website": "https://docs.vllm.ai"
+        }
+      ]
+    },
+    {
+      "id": "ai-frameworks-sdk",
+      "domain": "backend",
+      "name": "AI Frameworks / SDKs",
+      "description": "Build AI-powered applications, agents, and retrieval workflows",
+      "mode": "multi",
+      "technologies": [
+        {
+          "id": "langchain",
+          "name": "LangChain",
+          "description": "Framework for building LLM-powered applications and agents.",
+          "strengths": ["Agent orchestration", "Rich integrations"],
+          "icon": "langchain",
+          "website": "https://www.langchain.com"
+        },
+        {
+          "id": "llamaindex",
+          "name": "LlamaIndex",
+          "description": "Data framework for connecting LLMs to external data sources.",
+          "strengths": ["Data ingestion", "RAG pipelines"],
+          "icon": "llamaindex",
+          "website": "https://www.llamaindex.ai"
+        },
+        {
+          "id": "vercel-ai-gateway",
+          "name": "Vercel AI Gateway",
+          "description": "Unified gateway for accessing AI models in Vercel applications.",
+          "strengths": ["Provider routing", "Vercel integration"],
+          "icon": "vercel",
+          "website": "https://vercel.com/ai-gateway"
+        },
+        {
+          "id": "vercel-ai-sdk",
+          "name": "Vercel AI SDK",
+          "description": "TypeScript toolkit for building AI-powered applications.",
+          "strengths": ["Framework agnostic", "Streaming support"],
+          "icon": "vercel",
+          "website": "https://sdk.vercel.ai"
         }
       ]
     },
