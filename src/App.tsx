@@ -95,7 +95,7 @@ function App() {
             className={`lg:col-span-2 ${mobileView === "picker" ? "hidden lg:block" : ""}`}
             aria-label="Selected stack"
           >
-            <div className="lg:sticky lg:top-7 lg:max-h-[calc(100svh-3.5rem)] lg:overflow-y-auto lg:pr-1">
+            <div className="lg:sticky lg:top-7 lg:h-[calc(100svh-3.5rem)] lg:pr-1">
               <SelectedStack
                 selectedCategories={picker.selectedCategories}
                 selectedCount={picker.selectedCount}

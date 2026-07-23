@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom/vitest";
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import App from "./App";
 
 describe("Tech Stack Picker", () => {
@@ -78,6 +78,33 @@ describe("Tech Stack Picker", () => {
       "aria-pressed",
       "true",
     );
+  });
+
+  it("copies a Mermaid prompt with technology images", () => {
+    const writeText = vi.fn().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, "clipboard", {
+      configurable: true,
+      value: { writeText },
+    });
+
+    render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: "Frontend" }));
+    fireEvent.click(screen.getByRole("button", { name: /^React$/i }));
+    fireEvent.click(screen.getByRole("button", { name: /view summary/i }));
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: /copy generate mermaid chart prompt/i,
+      }),
+    );
+
+    expect(writeText).toHaveBeenCalledWith(
+      expect.stringContaining("flowchart LR"),
+    );
+    expect(writeText).toHaveBeenCalledWith(
+      expect.stringContaining("https://cdn.simpleicons.org/react/191919"),
+    );
+    expect(writeText).toHaveBeenCalledWith(expect.stringContaining("img:"));
+    expect(writeText).toHaveBeenCalledWith(expect.stringContaining("React"));
   });
 
   it("updates the stack immediately, supports replacement, search, and reset", () => {

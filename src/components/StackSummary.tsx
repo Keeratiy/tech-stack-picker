@@ -1,4 +1,10 @@
-import { ArrowLeft, Check, Clipboard, ExternalLink } from "lucide-react";
+import {
+  ArrowLeft,
+  Check,
+  Clipboard,
+  ExternalLink,
+  Image as ImageIcon,
+} from "lucide-react";
 import { useState } from "react";
 import type { Domain, SelectedCategory, Technology } from "../types/catalog";
 
@@ -98,12 +104,41 @@ function buildArchitecturePrompt(
   return lines.join("\n");
 }
 
+function buildMermaidPrompt(selectedCategories: SelectedCategory[]): string {
+  const lines: string[] = [
+    "Generate a Mermaid architecture flowchart for the following application stack.",
+    "",
+    "Requirements:",
+    "- Output only valid Mermaid code inside a ```mermaid code block.",
+    "- Use mermaid version 11 syntax.",
+    "- Icons must not have a background and border.",
+    "- Connect technologies in a logical request and data flow.",
+    "- Use each provided image URL exactly and keep technology names readable.",
+    "- Add a short edge label only when it clarifies the responsibility or connection.",
+    "- Check syntax and ensure the Mermaid code is valid and renders correctly.",
+    "",
+    "Selected technologies:",
+  ];
+
+  for (const { category, technologies } of selectedCategories) {
+    lines.push(`\n## ${category.domain} / ${category.name}`);
+    for (const technology of technologies) {
+      lines.push(
+        `- ${technology.name}: image URL ${`https://cdn.simpleicons.org/${technology.icon}`}. ${technology.description}`,
+      );
+    }
+  }
+
+  return lines.join("\n");
+}
+
 export function StackSummary({
   selectedCategories,
   selectedCount,
   onBack,
 }: StackSummaryProps) {
   const [copied, setCopied] = useState(false);
+  const [mermaidCopied, setMermaidCopied] = useState(false);
 
   const counts = domains.map((domain) => ({
     domain,
@@ -119,9 +154,16 @@ export function StackSummary({
     setTimeout(() => setCopied(false), 2000);
   }
 
+  async function handleCopyMermaidPrompt() {
+    const prompt = buildMermaidPrompt(selectedCategories);
+    await navigator.clipboard.writeText(prompt);
+    setMermaidCopied(true);
+    setTimeout(() => setMermaidCopied(false), 2000);
+  }
+
   return (
     <section aria-labelledby="summary-heading">
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex flex-wrap items-start justify-between gap-4">
         <button
           type="button"
           onClick={onBack}
@@ -131,23 +173,43 @@ export function StackSummary({
           Back to picker
         </button>
 
-        <button
-          type="button"
-          onClick={handleCopyPrompt}
-          className="flex h-10 items-center gap-2 border border-rule bg-white px-3 text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:border-ink focus-visible:ring-2 focus-visible:ring-coral/30"
-        >
-          {copied ? (
-            <>
-              <Check className="size-4 text-green-600" aria-hidden="true" />
-              Copied!
-            </>
-          ) : (
-            <>
-              <Clipboard className="size-4" aria-hidden="true" />
-              Copy generate image prompt
-            </>
-          )}
-        </button>
+        <div className="flex flex-wrap gap-4">
+          <button
+            type="button"
+            onClick={handleCopyPrompt}
+            className="flex h-10 items-center gap-2 border border-rule bg-white px-3 text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:border-ink focus-visible:ring-2 focus-visible:ring-coral/30"
+          >
+            {copied ? (
+              <>
+                <Check className="size-4 text-green-600" aria-hidden="true" />
+                Copied!
+              </>
+            ) : (
+              <>
+                <ImageIcon className="size-4" aria-hidden="true" />
+                Generate image prompt
+              </>
+            )}
+          </button>
+
+          <button
+            type="button"
+            onClick={handleCopyMermaidPrompt}
+            className="flex h-10 items-center gap-2 border border-rule bg-white px-3 text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:border-ink focus-visible:ring-2 focus-visible:ring-coral/30"
+          >
+            {mermaidCopied ? (
+              <>
+                <Check className="size-4 text-green-600" aria-hidden="true" />
+                Copied!
+              </>
+            ) : (
+              <>
+                <Clipboard className="size-4" aria-hidden="true" />
+                Generate Mermaid chart prompt
+              </>
+            )}
+          </button>
+        </div>
       </div>
 
       <header className="mt-8 border-b border-rule pb-6">
