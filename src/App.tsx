@@ -52,47 +52,49 @@ function App() {
     <main className="min-h-svh bg-paper text-ink">
       <DomainTabs activeDomain={domainView} onChange={setDomainView} />
       <div className="mx-auto max-w-[1720px] px-4 py-4 sm:px-6 lg:px-8 lg:py-7">
-        <AppHeader
-          query={picker.query}
-          selectedCount={picker.selectedCount}
-          onQueryChange={picker.setQuery}
-          onClearQuery={() => picker.setQuery("")}
-        />
-        <MobileViewTabs
-          activeView={mobileView}
-          selectedCount={picker.selectedCount}
-          onChange={setMobileView}
-        />
-        <div className="mt-6 grid gap-6 lg:grid-cols-12 lg:gap-8">
-          <section
-            id="technology-picker-section"
-            className={`lg:col-span-10 ${mobileView === "stack" ? "hidden lg:block" : ""}`}
-            aria-label="Technology picker"
-          >
-            {(() => {
-              const filtered = picker.catalog.categories.filter(
-                (category) => category.domain === domainView,
-              );
-              if (!filtered.length) {
-                return (
-                  <div className="border border-dashed border-rule px-5 py-12 text-center text-sm text-muted">
-                    No technologies match “{picker.query}”. Try a different
-                    term.
-                  </div>
+        <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+          <div className="lg:col-span-10">
+            <AppHeader
+              query={picker.query}
+              selectedCount={picker.selectedCount}
+              onQueryChange={picker.setQuery}
+              onClearQuery={() => picker.setQuery("")}
+            />
+            <MobileViewTabs
+              activeView={mobileView}
+              selectedCount={picker.selectedCount}
+              onChange={setMobileView}
+            />
+            <section
+              id="technology-picker-section"
+              className={`mt-6 ${mobileView === "stack" ? "hidden lg:block" : ""}`}
+              aria-label="Technology picker"
+            >
+              {(() => {
+                const filtered = picker.catalog.categories.filter(
+                  (category) => category.domain === domainView,
                 );
-              }
-              return (
-                <DomainCatalog
-                  domain={domainView}
-                  categories={filtered}
-                  selections={picker.selections}
-                  onToggle={picker.toggle}
-                />
-              );
-            })()}
-          </section>
+                if (!filtered.length) {
+                  return (
+                    <div className="border border-dashed border-rule px-5 py-12 text-center text-sm text-muted">
+                      No technologies match “{picker.query}”. Try a different
+                      term.
+                    </div>
+                  );
+                }
+                return (
+                  <DomainCatalog
+                    domain={domainView}
+                    categories={filtered}
+                    selections={picker.selections}
+                    onToggle={picker.toggle}
+                  />
+                );
+              })()}
+            </section>
+          </div>
           <aside
-            className={`lg:col-span-2 ${mobileView === "picker" ? "hidden lg:block" : ""}`}
+            className={`mt-6 lg:col-span-2 lg:mt-0 ${mobileView === "picker" ? "hidden lg:block" : ""}`}
             aria-label="Selected stack"
           >
             <div className="lg:sticky lg:top-7 lg:h-[calc(100svh-3.5rem)] lg:pr-1">
